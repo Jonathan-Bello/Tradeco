@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 
 import { ViewTransitions } from 'astro:transitions';
+import Counter from '../components/Counter';
 ---
 
 <!doctype html>
@@ -20,8 +21,9 @@ import { ViewTransitions } from 'astro:transitions';
 		<ViewTransitions />
 	</head>
 	<body>
-		<header>
-			<img 
+		<header >
+		<Counter transition:persist client:visible/>
+			<img
 				class="icon"
 			src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f4e6.svg" alt="">
 			<h1>SOY EL HEADER</h1>
