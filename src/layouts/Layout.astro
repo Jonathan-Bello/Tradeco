@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <!doctype html>
@@ -15,11 +17,19 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
+		<header>
+			<img 
+				class="icon"
+			src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f4e6.svg" alt="">
+			<h1>SOY EL HEADER</h1>
+		</header>
 		<slot />
 	</body>
 </html>
+
 <style is:global>
 	:root {
 		--accent: 136, 58, 234;
@@ -31,11 +41,15 @@ const { title } = Astro.props;
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
+		color: white;
 	}
 	html {
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 		background-size: 224px;
+	}
+	.icon {
+		width: 4rem;
 	}
 	code {
 		font-family:

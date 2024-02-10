@@ -1,0 +1,25 @@
+---
+import Layout from "../../layouts/Layout.astro";
+const {name} = Astro.params
+
+const monsters = [
+  {
+    name: "rathalos",
+    tipo: "Wyvern",
+  },
+  {
+    name: "Presioth",
+    tipo: "Leviatan",
+  },
+  {
+    name: "Congalala",
+    tipo: "Bestia de colmillos",
+  },
+];
+---
+
+<Layout
+ title="Blog names"
+>
+    <h1>{name}</h1>
+</Layout>
