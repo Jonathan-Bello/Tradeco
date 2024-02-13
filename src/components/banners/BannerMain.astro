@@ -1,0 +1,75 @@
+---
+import { getImage } from "astro:assets";
+
+interface Props {
+  backgroundImgs: ImageMetadata[];
+}
+
+const { backgroundImgs } = Astro.props;
+
+// Array para almacenar las imágenes optimizadas
+const optimizedImages = [];
+
+// Iterar sobre cada imagen de backgroundImgs y optimizarla
+for (let i = 0; i < backgroundImgs.length; i++) {
+  const optimizedImage = await getImage({
+    src: backgroundImgs[i],
+    format: "jpg",
+  });
+  optimizedImages.push(optimizedImage);
+}
+---
+
+<script>
+  // Obtener el elemento del banner
+  const banner = document.getElementById("bannerPrincipal");
+
+  // Obtenemos las imagenes apartir del dataset, transformando el string a JSON
+  const imgs = JSON.parse(banner.dataset.images);
+
+  // Índice actual de la imagen
+  let currentIndex = 0;
+
+  // Función para cambiar la imagen de fondo
+  function changeBackground() {
+    currentIndex = (currentIndex + 1) % imgs.length;
+    banner.style.backgroundImage = `url(${imgs[currentIndex].src})`;
+  }
+
+  // Cambiar la imagen de fondo cada 5 segundos
+  setInterval(changeBackground, 7000);
+</script>
+
+<section
+  id="bannerPrincipal"
+  data-images={JSON.stringify(optimizedImages)}
+  class="banner relative mx-4 lg:mx-0 my-3 lg:my-8 rounded-lg
+  h-96 md:h-[32rem] lg:h-[36rem]
+  bg-[length:auto_100%] md:bg-cover"
+  style={`background-image: url(${optimizedImages[0].src});`}
+>
+  <p
+    class="banner__title
+    absolute bg-accent-500 text-gray-50 font-normal text-right
+    py-4 px-4 pl-12 pb-8 rounded-bl-full rounded-tr-lg top-0 right-0
+    w-full md:w-96"
+  >
+    Acabados tan <b class="font-semibold">sofisticados y únicos</b> como <b
+      class="font-semibold">cada uno de tus espacios</b
+    >
+  </p>
+</section>
+
+<style>
+  .banner {
+    background-position: center right;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    transition: background 1s ease-in-out;
+  }
+
+  .banner__title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+</style>

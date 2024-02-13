@@ -1,10 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import BannerMain from "../components/banners/BannerMain.astro";
+import TitleMote from "../components/pages/home/TitleMote.astro";
+
+import bannerImg from "../assets/imgs/bannerMain.jpg";
+import bannerImg1 from "../assets/imgs/bannerMain01.jpg";
+import bannerImg2 from "../assets/imgs/bannerMain02.jpg";
+import bannerImg3 from "../assets/imgs/bannerMain03.jpg";
+import bannerImg4 from "../assets/imgs/bannerMain04.jpg";
+import bannerImg5 from "../assets/imgs/bannerMain05.jpg";
 ---
 
 <Layout title="Welcome to Astro.">
-  <h1 class="font-t text-pr">Titulo Tradeco</h1>
-  <a href="/blog">BLOG</a>
+  <BannerMain
+    backgroundImgs={[
+      bannerImg,
+      bannerImg1,
+      bannerImg2,
+      bannerImg3,
+      bannerImg4,
+      bannerImg5,
+    ]}
+  />
+
+  <TitleMote>
+    <h1 class="font-title text-6xl text-tertiary-500">
+      Elige <br /><span class="text-primary-500">Tradeco</span>
+    </h1>
+  </TitleMote>
 </Layout>
 
 <style></style>
