@@ -1,9 +1,9 @@
 ---
-layout : '../layouts/Layout.astro'
+layout: "../layouts/Layout.astro"
 ---
 
-# Tituto 
+# Titulo
 
 Lorem osdifnkjsdnfjksndkjnjkfsd
 
-## titulo2 
+## titulo 2
