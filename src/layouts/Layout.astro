@@ -21,11 +21,12 @@ const { title } = Astro.props;
     <title>{title}</title>
     <ViewTransitions />
   </head>
-  <body class="flex flex-col items-center">
+  <body class="w-full">
     <Header />
-    <main class="container">
+    <main class="flex flex-col justify-center items-center">
       <slot />
     </main>
+    <slot name="fullScreenFooter" />
     <GlobalStyles />
   </body>
 </html>

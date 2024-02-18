@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import Marca01 from "../../../assets/imgs/home/logoMarca01.png";
+import Marca02 from "../../../assets/imgs/home/logoMarca02.png";
+import Marca03 from "../../../assets/imgs/home/logoMarca03.png";
+import Marca04 from "../../../assets/imgs/home/logoMarca04.png";
+---
+
+<section class="marcasBanner bg-red-200 w-full">
+  <h2 class="text-white text-3xl">Exclusivas marcas</h2>
+
+  <div>
+    <Image src={Marca01} alt={"ArtisFlooring"} />
+    <Image src={Marca02} alt={"Stona"} />
+    <Image src={Marca03} alt={"Imperial Stone"} />
+    <Image src={Marca04} alt={"Perdura stone"} />
+  </div>
+</section>
+
+<style lang="scss">
+  .marcasBanner {
+    -webkit-mask-image: url("../../../assets/imgs/home/mask.png"); /* Ruta de la imagen de máscara */
+    mask-image: url("../../../assets/imgs/home/mask.png"); /* Ruta de la imagen de máscara */
+  }
+</style>

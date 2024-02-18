@@ -17,9 +17,10 @@ const CarouselMain = ({ items }) => {
     <Swiper
       pagination={pagination}
       modules={[Pagination]}
-      className="!mx-4 mt-8 mb-16 lg:mb-36"
+      className="container !px-4 md:!mx-0 mt-8 mb-16 lg:mb-36"
       breakpoints={{
         slidesPerView: 1,
+        spaceBetween: 8,
         640: {
           slidesPerView: 2,
           spaceBetween: 8,
