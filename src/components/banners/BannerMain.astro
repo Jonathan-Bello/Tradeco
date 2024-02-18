@@ -20,26 +20,6 @@ for (let i = 0; i < backgroundImgs.length; i++) {
 }
 ---
 
-<script>
-  // Obtener el elemento del banner
-  const banner = document.getElementById("bannerPrincipal");
-
-  // Obtenemos las imagenes apartir del dataset, transformando el string a JSON
-  const imgs = JSON.parse(banner.dataset.images);
-
-  // Índice actual de la imagen
-  let currentIndex = 0;
-
-  // Función para cambiar la imagen de fondo
-  function changeBackground() {
-    currentIndex = (currentIndex + 1) % imgs.length;
-    banner.style.backgroundImage = `url(${imgs[currentIndex].src})`;
-  }
-
-  // Cambiar la imagen de fondo cada 5 segundos
-  setInterval(changeBackground, 7000);
-</script>
-
 <section
   id="bannerPrincipal"
   data-images={JSON.stringify(optimizedImages)}
@@ -73,3 +53,23 @@ for (let i = 0; i < backgroundImgs.length; i++) {
     line-height: 1.75rem;
   }
 </style>
+
+<script>
+  // Obtener el elemento del banner
+  const banner = document.getElementById("bannerPrincipal");
+
+  // Obtenemos las imagenes apartir del dataset, transformando el string a JSON
+  const imgs = JSON.parse(banner.dataset.images);
+
+  // Índice actual de la imagen
+  let currentIndex = 0;
+
+  // Función para cambiar la imagen de fondo
+  function changeBackground() {
+    currentIndex = (currentIndex + 1) % imgs.length;
+    banner.style.backgroundImage = `url(${imgs[currentIndex].src})`;
+  }
+
+  // Cambiar la imagen de fondo cada 5 segundos
+  setInterval(changeBackground, 7000);
+</script>

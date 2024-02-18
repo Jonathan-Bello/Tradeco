@@ -1,0 +1,21 @@
+.swiper-pagination {
+  bottom: 0rem !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  @apply flex bg-primary-500 rounded-full py-2 px-2;
+}
+
+.swiper-pagination-bullet.dots {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url("../../../assets/svg/tradecoIcon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 0.5rem;
+}
+
+.swiper-pagination-bullet.dots.swiper-pagination-bullet-active {
+  @apply bg-primary-500;
+}
