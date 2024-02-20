@@ -23,7 +23,8 @@ for (let i = 0; i < backgroundImgs.length; i++) {
 <section
   id="bannerPrincipal"
   data-images={JSON.stringify(optimizedImages)}
-  class="banner w-11/12 md:container relative mx-4 md:mx-0 my-3 lg:my-8 rounded-lg
+  class="banner w-11/12 md:container relative mx-4 md:mx-0 my-3 lg:my-8
+  rounded-3xl overflow-hidden
   h-96 md:h-[32rem] lg:h-[36rem]
   bg-[length:auto_100%] md:bg-cover"
   style={`background-image: url(${optimizedImages[0].src});`}
@@ -31,7 +32,9 @@ for (let i = 0; i < backgroundImgs.length; i++) {
   <p
     class="banner__title
     absolute bg-accent-500 text-gray-50 font-normal text-right
-    py-4 px-4 pl-12 pb-8 rounded-bl-full rounded-tr-[20rem] top-0 right-0
+    py-4 px-4 pl-12 pb-8
+    rounded-bl-full
+    top-0 right-0
     w-full md:w-96"
   >
     Acabados tan <b class="font-semibold">sofisticados y únicos</b> como <b

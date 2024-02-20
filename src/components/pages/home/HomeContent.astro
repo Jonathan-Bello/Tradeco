@@ -1,0 +1,72 @@
+---
+import BannerMain from "../../../components/banners/BannerMain.astro";
+import TitleMote from "../../../components/pages/home/TitleMote.astro";
+import ProductosSection from "../../../components/pages/home/ProductosSection.astro";
+import MarcasSection from "../../../components/pages/home/MarcasSection.astro";
+
+import bannerImg from "../../../assets/imgs/bannerMain.jpg";
+import bannerImg1 from "../../../assets/imgs/bannerMain01.jpg";
+import bannerImg2 from "../../../assets/imgs/bannerMain02.jpg";
+import bannerImg3 from "../../../assets/imgs/bannerMain03.jpg";
+import bannerImg4 from "../../../assets/imgs/bannerMain04.jpg";
+import bannerImg5 from "../../../assets/imgs/bannerMain05.jpg";
+
+import CarouselMain from "../../../components/carousels/CarouselMain/CarouselMain";
+import carousel01 from "../../../assets/imgs/home/carousel01.jpg";
+import carousel02 from "../../../assets/imgs/home/carousel02.jpg";
+import carousel03 from "../../../assets/imgs/home/carousel03.jpg";
+import carousel04 from "../../../assets/imgs/home/carousel04.jpg";
+import carousel05 from "../../../assets/imgs/home/carousel05.jpg";
+---
+
+<>
+  <BannerMain
+    backgroundImgs={[
+      bannerImg,
+      bannerImg1,
+      bannerImg2,
+      bannerImg3,
+      bannerImg4,
+      bannerImg5,
+    ]}
+  />
+
+  <TitleMote>
+    <h1 class="font-title text-6xl text-tertiary-500 tracking-wider">
+      Elige <br /><span class="text-primary-500">Tradeco</span>
+    </h1>
+  </TitleMote>
+
+  <CarouselMain
+    client:load
+    items={[
+      {
+        img: carousel01,
+        title: "Asesoría técnica por parte de ingenieros y arquitectos.",
+      },
+      {
+        img: carousel02,
+        title: "Productos estéticos, funcionales y durables.",
+      },
+      {
+        img: carousel03,
+        title: "Materiales de alta calidad a precios asequibles.",
+      },
+      {
+        img: carousel04,
+        title:
+          "Servicio enfocado en que tengas la mejor experiencia de compra.",
+      },
+      {
+        img: carousel05,
+        title: "Stock suficiente para proveer a particulares y distribuidores.",
+      },
+    ]}
+  />
+
+  <ProductosSection />
+
+  <MarcasSection />
+</>
+
+<style></style>
