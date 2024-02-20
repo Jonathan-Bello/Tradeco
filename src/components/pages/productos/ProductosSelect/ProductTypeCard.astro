@@ -1,0 +1,42 @@
+---
+import { getImage } from "astro:assets";
+
+type Props = {
+  imgBackground: ImageMetadata;
+  title: string;
+  link: string;
+};
+
+const { imgBackground, title, link } = Astro.props;
+
+const optimizedBackground = await getImage({
+  src: imgBackground,
+  format: "jpg",
+});
+---
+
+<a href={link}>
+  <article
+    class="ProductTypeCard md:container relative mt-0 mb-4 lg:mb-8
+  rounded-3xl overflow-hidden
+  h-44 lg:h-60
+  bg-no-repeat
+  bg-cover md:bg-cover"
+    style={`background-image: url(${optimizedBackground.src});`}
+  >
+    <p
+      class="ProductTypeCard__title
+    absolute bg-tertiary-300 bg-opacity-80 text-primary-500
+    font-bold font-title text-2xl lg:text-3xl
+    py-6 pl-6 lg:py-6
+    rounded-br-full
+    top-0 left-0
+    w-full max-w-80 md:max-w-96
+    tracking-[1.70px] leading-[1.5rem]"
+    >
+      {title}
+    </p>
+  </article>
+</a>
+
+<style></style>
