@@ -12,8 +12,11 @@ import imgPiedra03 from "../../../assets/imgs/productos/Piedra03.jpg";
 
 <>
   <BannerSmall />
-  <ProductosSelect client:load>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4" slot="pisos">
+  <ProductosSelect client:load transition:persist>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 gap-x-4"
+      slot="pisos"
+    >
       <ProductTypeCard
         imgBackground={imgPiso01}
         title="Piso vinílico Artis LVT"

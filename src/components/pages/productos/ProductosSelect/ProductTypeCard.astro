@@ -15,7 +15,7 @@ const optimizedBackground = await getImage({
 });
 ---
 
-<a href={link}>
+<a href={link} id={link}>
   <article
     class="ProductTypeCard md:container relative mt-0 mb-4 lg:mb-8
   rounded-3xl overflow-hidden
@@ -40,3 +40,15 @@ const optimizedBackground = await getImage({
 </a>
 
 <style></style>
+
+<script is:inline>
+  let scrollPosition = 0;
+
+  document.addEventListener("astro:before-preparation", (ev) => {
+    scrollPosition = window.scrollY;
+  });
+
+  document.addEventListener("astro:after-swap", () => {
+    window.scrollTo(0, scrollPosition);
+  });
+</script>
