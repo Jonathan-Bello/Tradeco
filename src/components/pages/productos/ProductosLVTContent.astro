@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import vectorLVTMobile from "../../../assets/svg/vectorLVTMobile.svg";
+import vectorLVTDesk from "../../../assets/svg/vectorLVTDesk.svg";
+---
+
+<section class="container px-4 mt-10 md:px-0 lg:mt-12">
+  <h2
+    class="text-tertiary-500 font-title uppercase tracking-[3.20px] leading-[40px]
+  text-4xl mb-8"
+  >
+    Piso vinílico <br />
+    <span class="text-primary-500 text-6xl">Artis LVT</span>
+  </h2>
+
+  <p class="text-primary-500 text-base tracking-wider mb-4">
+    El piso vinílico <b>Artis de LVT</b> (Luxury Vinyl Tile) está fabricado con un
+    núcleo de PVC.
+  </p>
+
+  <ul class="list-disc ml-6 mb-6 tracking-wider">
+    <li class="mb-1">Instalación con adhesivo</li>
+    <li class="mb-1">Base flexible</li>
+    <li class="mb-1">Impermeable</li>
+    <li class="mb-1">Resistente a la humedad y el uso de tacones</li>
+    <li class="mb-1">Antibacteriano</li>
+    <li class="mb-1">Retardante de fuego</li>
+  </ul>
+
+  <!-- <div class="flex justify-end md:relative top-[-8rem] lg:top-[-12rem]"> -->
+  <picture class="flex justify-end md:relative top-[-8rem] lg:top-[-12rem]">
+    <source media="(max-width: 1023px)" srcset={vectorLVTMobile.src} />
+    <source media="(min-width: 1024px)" srcset={vectorLVTDesk.src} />
+    <img
+      class="w-full lg:max-w-[85%]"
+      src={vectorLVTDesk.src}
+      alt={"grafico"}
+    />
+  </picture>
+  <!-- </div> -->
+</section>
+
+<style></style>
