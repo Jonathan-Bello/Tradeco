@@ -1,0 +1,11 @@
+{
+  "id": "boreas",
+  "title": "Boreas",
+  "type": "lvt",
+  "image": "../../assets/imgs/pisos/boreas/boreas.jpg",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/boreas/boreas.jpg",
+    "../../assets/imgs/pisos/boreas/boreasPortada.jpg"
+  ],
+  "similarProductIDs": ["ares", "atica"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "atica",
+  "title": "Atica",
+  "type": "lvt",
+  "image": "../../assets/imgs/pisos/atica/atica.jpg",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/atica/atica.jpg",
+    "../../assets/imgs/pisos/atica/aticaPortada.jpg"
+  ],
+  "similarProductIDs": ["ares"]
+}

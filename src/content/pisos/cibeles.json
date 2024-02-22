@@ -1,0 +1,11 @@
+{
+  "id": "cibeles",
+  "title": "Cibeles",
+  "type": "lvt",
+  "image": "../../assets/imgs/pisos/cibeles/cibeles.jpg",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/cibeles/cibeles.jpg",
+    "../../assets/imgs/pisos/cibeles/cibelesPortada.jpg"
+  ],
+  "similarProductIDs": ["ares", "atica"]
+}
