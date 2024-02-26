@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  piso: CollectionEntry<"pisos">;
+};
+
+const { piso } = Astro.props;
+
+const data = piso.data;
+---
+
+<section class="w-full">
+  <div
+    class="w-full sm:w-1/2 md:max-w-md bg-secondary-500
+    pl-4 py-4 md:pl-8 lg:pl-24 lg:py-8
+    mb-8
+    rounded-br-full
+    text-accent-500 text-sm"
+  >
+    <a href="/productos">Productos/</a>
+    <a
+      href={data.type === "lvt"
+        ? "/productos/pisos-lvt"
+        : "/productos/pisos-spc"}
+      >{
+        data.type === "lvt"
+          ? "Piso vinílico Artis LVT/"
+          : "Piso vinílico Artis SPC/"
+      }</a
+    >
+    <b class="font-semibold">{data.title}</b>
+  </div>
+</section>
+
+<style></style>

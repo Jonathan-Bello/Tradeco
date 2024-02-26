@@ -4,8 +4,8 @@
   "type": "lvt",
   "image": "../../assets/imgs/pisos/boreas/boreas.jpg",
   "bannerImgs": [
-    "../../assets/imgs/pisos/boreas/boreas.jpg",
-    "../../assets/imgs/pisos/boreas/boreasPortada.jpg"
+    "../../assets/imgs/pisos/boreas/boreasPortada.jpg",
+    "../../assets/imgs/pisos/boreas/boreas.jpg"
   ],
   "similarProductIDs": ["ares", "atica"]
 }

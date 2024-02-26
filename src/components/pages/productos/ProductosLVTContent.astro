@@ -42,11 +42,13 @@ const pisosLVTData = await getCollection("pisos", ({ data }) => {
     />
   </picture>
 
-  <h2 class="mt-16 mb-6 font-title text-5xl text-primary-500 tracking-widest">
+  <h2
+    class="mt-16 md:mt-[-8rem] mb-6 lg:mb-8 font-title text-5xl lg:text-6xl text-primary-500 tracking-widest"
+  >
     Modelos
   </h2>
   <div
-    class="grid gap-2 gap-y-8 lg:gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+    class="grid gap-2 gap-y-8 lg:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
   >
     {
       pisosLVTData.map((piso) => {
@@ -55,6 +57,7 @@ const pisosLVTData = await getCollection("pisos", ({ data }) => {
             id={piso.id}
             img={piso.data.image}
             title={piso.data.title}
+            type={piso.data.type}
           />
         );
       })

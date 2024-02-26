@@ -4,8 +4,8 @@
   "type": "lvt",
   "image": "../../assets/imgs/pisos/ares/ares.jpg",
   "bannerImgs": [
-    "../../assets/imgs/pisos/ares/ares.jpg",
-    "../../assets/imgs/pisos/ares/aresPortada.jpg"
+    "../../assets/imgs/pisos/ares/aresPortada.jpg",
+    "../../assets/imgs/pisos/ares/ares.jpg"
   ],
   "similarProductIDs": ["atica"]
 }

@@ -1,0 +1,14 @@
+.ModalBase {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  @apply z-20;
+
+  &__CloseIcon {
+    cursor: pointer;
+    @apply text-white size-12 absolute top-4 right-4 lg:top-8 lg:right-8;
+  }
+}

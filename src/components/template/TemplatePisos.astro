@@ -1,0 +1,39 @@
+---
+import type { CollectionEntry } from "astro:content";
+import ProductosBreadcrumbs from "../pages/productos/ProductosBreadcrumbs.astro";
+import ProductosBanner from "@/components/pages/productos/ProductosBanner";
+import { Image } from "astro:assets";
+
+type Props = {
+  piso: CollectionEntry<"pisos">;
+};
+
+const { piso } = Astro.props;
+---
+
+<ProductosBreadcrumbs piso={piso} />
+
+<ProductosBanner client:load arrayImgs={piso.data.bannerImgs} />
+
+<div
+  class="flex gap-4 lg:gap-6 items-end container relative px-6 top-[-2rem] md:top-[-4rem] lg:top-[-8rem]"
+>
+  <Image
+    class="border-white border-8 lg:border-4 w-24 h-32 sm:w-32 sm:h-48 lg:w-56 lg:h-72"
+    src={piso.data.image}
+    alt="imagen"
+  />
+
+  <div class="flex flex-col relative top-14 sm:top-0 md:top-0 lg:pb-1">
+    <h1 class="font-title text-5xl mb-2 lg:mb-4 tracking-wider uppercase">
+      {piso.data.title}
+    </h1>
+
+    <a
+      class="border-2 border-accent-500 text-accent-500 px-6 py-3 rounded-full"
+      href="/contacto">Estoy interesado</a
+    >
+  </div>
+</div>
+
+<style></style>

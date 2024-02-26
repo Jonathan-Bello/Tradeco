@@ -19,3 +19,8 @@
 .swiper-pagination-bullet.dots.swiper-pagination-bullet-active {
   @apply bg-primary-500;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-secondary-500;
+}
