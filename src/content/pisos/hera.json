@@ -1,0 +1,12 @@
+{
+    "id": "Hera",
+    "title": "Hera",
+    "type": "lvt",
+    "image": "../../assets/imgs/pisos/hera/hera.jpg",
+    "bannerImgs": [
+      "../../assets/imgs/pisos/hera/heraPortada.jpg",
+      "../../assets/imgs/pisos/hera/hera.jpg"
+    ],
+    "similarProductIDs": ["Ares","Atica","Boreas","Cibele"]
+  }
+  

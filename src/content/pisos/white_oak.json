@@ -1,0 +1,12 @@
+{
+    "id": "White_Oak",
+    "title": "White Oak",
+    "type": "lvt",
+    "image": "../../assets/imgs/pisos/white_oak/white_oak.jpg",
+    "bannerImgs": [
+      "../../assets/imgs/pisos/white_oak/white_oakPortada.jpg",
+      "../../assets/imgs/pisos/white_oak/white_oak.jpg"
+    ],
+    "similarProductIDs": ["","","",""]
+  }
+  

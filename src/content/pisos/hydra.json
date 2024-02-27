@@ -1,0 +1,12 @@
+{
+    "id": "Hydra",
+    "title": "Hydra",
+    "type": "lvt",
+    "image": "../../assets/imgs/pisos/hydra/hydra.jpg",
+    "bannerImgs": [
+      "../../assets/imgs/pisos/hydra/hydraPortada.jpg",
+      "../../assets/imgs/pisos/hydra/hydra.jpg"
+    ],
+    "similarProductIDs": ["Ares","Atica","Boreas","Cibele"]
+  }
+  

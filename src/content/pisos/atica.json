@@ -1,5 +1,5 @@
 {
-  "id": "atica",
+  "id": "Atica",
   "title": "Atica",
   "type": "lvt",
   "image": "../../assets/imgs/pisos/atica/atica.jpg",
@@ -7,5 +7,5 @@
     "../../assets/imgs/pisos/atica/aticaPortada.jpg",
     "../../assets/imgs/pisos/atica/atica.jpg"
   ],
-  "similarProductIDs": ["ares"]
+  "similarProductIDs": ["Ares","Boreas","Cibele","Hera"]
 }

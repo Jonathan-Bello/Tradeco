@@ -1,0 +1,12 @@
+{
+    "id": "Kiara",
+    "title": "Kiara",
+    "type": "lvt",
+    "image": "../../assets/imgs/pisos/kiara/kiara.jpg",
+    "bannerImgs": [
+      "../../assets/imgs/pisos/kiara/kiaraPortada.jpg",
+      "../../assets/imgs/pisos/kiara/kiara.jpg"
+    ],
+    "similarProductIDs": ["Ares","Atica","Boreas","Cibelle"]
+  }
+  

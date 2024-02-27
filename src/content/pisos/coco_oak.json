@@ -1,0 +1,12 @@
+{
+    "id": "Coco_Oak",
+    "title": "Coco Oak",
+    "type": "lvt",
+    "image": "../../assets/imgs/pisos/coco_oak/coco_oak.jpg",
+    "bannerImgs": [
+      "../../assets/imgs/pisos/coco_oak/coco_oakPortada.jpg",
+      "../../assets/imgs/pisos/coco_oak/coco_oak.jpg"
+    ],
+    "similarProductIDs": ["Canadian_Grey","Carbon","Massy_Oak","White_Oak"]
+  }
+  

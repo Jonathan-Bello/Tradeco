@@ -1,5 +1,5 @@
 {
-  "id": "ares",
+  "id": "Ares",
   "title": "Ares",
   "type": "lvt",
   "image": "../../assets/imgs/pisos/ares/ares.jpg",
@@ -7,5 +7,5 @@
     "../../assets/imgs/pisos/ares/aresPortada.jpg",
     "../../assets/imgs/pisos/ares/ares.jpg"
   ],
-  "similarProductIDs": ["atica"]
+  "similarProductIDs": ["Atica","Boreas","Cibele","Hera"]
 }

@@ -1,0 +1,12 @@
+{
+    "id": "Canadian_Grey",
+    "title": "Canadian Grey",
+    "type": "lvt",
+    "image": "../../assets/imgs/pisos/canadian_grey/canadian_grey.jpg",
+    "bannerImgs": [
+      "../../assets/imgs/pisos/canadian_grey/canadian_greyPortada.jpg",
+      "../../assets/imgs/pisos/canadian_grey/canadian_grey.jpg"
+    ],
+    "similarProductIDs": ["Carbon","Coco_Oak","Massy_Oak","White_Oak"]
+  }
+  
