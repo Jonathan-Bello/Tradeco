@@ -1,12 +1,15 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import ProductosContent from "../../components/pages/productos/ProductosContent.astro";
+import ProductosSPCContent from "@/components/pages/productos/ProductosSPCContent.astro";
+import ProductosInfo from "@/components/pages/productos/ProductosInfo.astro";
 ---
 
 <Layout title="Pisos vinilico artis LVT">
-  <ProductosContent  />
+  <ProductosContent />
 
-  <h1 class="h-96 bg-red-500">AQUI CONTENIDO</h1>
+  <ProductosSPCContent />
+  <ProductosInfo type="spc" />
 </Layout>
 
 <style></style>

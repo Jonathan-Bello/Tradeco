@@ -21,7 +21,7 @@ const { type } = Astro.props;
 ---
 
 <section
-  class="container px-4 md:px-0 gap-4 lg:gap-8
+  class="container px-4 md:px-0 mb-16 gap-4 lg:gap-8
   grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
 >
   <ProductosInfoCard
@@ -34,7 +34,9 @@ const { type } = Astro.props;
     client:load
     image={IconGarantia}
     title={"Garantía limitada"}
-    url={""}
+    url={type === "lvt"
+      ? "/public/pdfs/Garantia_Piso_LVT.pdf"
+      : "/public/pdfs/Garantia_Piso_SPC.pdf"}
   />
 
   <div class="xl:col-span-2">
@@ -58,8 +60,7 @@ const { type } = Astro.props;
       client:load
       image={IconMantenimiento}
       title={"Mantenimiento y uso diario"}
+      url="https://hogar.tarkett.es/es_ES/node/como-limpiar-y-mantener-un-suelo-vinilico-4505"
     />
   </div>
 </section>
-
-<style></style>

@@ -1,14 +1,18 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import { getEntries, type CollectionEntry } from "astro:content";
 import ProductosBreadcrumbs from "../pages/productos/ProductosBreadcrumbs.astro";
+import ProductosInfo from "@/components/pages/productos/ProductosInfo.astro";
 import ProductosBanner from "@/components/pages/productos/ProductosBanner";
 import { Image } from "astro:assets";
+import ProductosPisosCard from "../pages/productos/ProductosPisosCard.astro";
 
 type Props = {
   piso: CollectionEntry<"pisos">;
 };
 
 const { piso } = Astro.props;
+
+const similarPisos = await getEntries(piso.data.similarProductIDs);
 ---
 
 <ProductosBreadcrumbs piso={piso} />
@@ -29,10 +33,37 @@ const { piso } = Astro.props;
     </h1>
 
     <a
-      class="border-2 border-accent-500 text-accent-500 px-6 py-3 rounded-full"
+      class="text-center border-2 border-accent-500 text-accent-500 px-6 py-3 rounded-full"
       href="/contacto">Estoy interesado</a
     >
   </div>
 </div>
+
+<ProductosInfo type={piso.data.type} />
+
+<section class="container pt-24 pb-16 px-4 md:px-0">
+  <h2
+    class="font-title text-center text-2xl lg:text-5xl text-primary-500 tracking-widest
+    mb-12"
+  >
+    También te puede interesar
+  </h2>
+  <div
+    class="grid gap-4 gap-y-8 lg:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+  >
+    {
+      similarPisos.map((p) => {
+        return (
+          <ProductosPisosCard
+            id={p.id}
+            img={p.data.image}
+            title={p.data.title}
+            type={p.data.type}
+          />
+        );
+      })
+    }
+  </div>
+</section>
 
 <style></style>

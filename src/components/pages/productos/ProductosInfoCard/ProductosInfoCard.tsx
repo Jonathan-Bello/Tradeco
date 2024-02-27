@@ -20,15 +20,29 @@ const ProductosInfoCard = ({
     <article className="flex flex-col items-center">
       <img className="size-20 relative top-8" src={image.src} alt={title} />
 
-      <p
-        className="w-full cursor-pointer
-        bg-secondary-500 text-primary-500 rounded-xl
-        text-center px-10 pt-10 pb-6
-        text-lg font-title tracking-widest"
-        onClick={() => setShowModal(!showModal)}
-      >
-        {title}
-      </p>
+      {url ? (
+        <a className="w-full" href={url}>
+          <p
+            className="w-full cursor-pointer
+            bg-secondary-500 text-primary-500 rounded-xl
+            text-center px-10 pt-10 pb-6
+            text-lg font-title tracking-widest"
+            onClick={() => setShowModal(!showModal)}
+          >
+            {title}
+          </p>
+        </a>
+      ) : (
+        <p
+          className="w-full cursor-pointer
+            bg-secondary-500 text-primary-500 rounded-xl
+            text-center px-10 pt-10 pb-6
+            text-lg font-title tracking-widest"
+          onClick={() => setShowModal(!showModal)}
+        >
+          {title}
+        </p>
+      )}
 
       {modalImg && (
         <ModalBase show={showModal} setShow={setShowModal}>

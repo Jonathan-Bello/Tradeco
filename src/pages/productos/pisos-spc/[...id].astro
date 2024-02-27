@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import TemplatePisos from "../../../components/template/TemplatePisos.astro";
+
+export async function getStaticPaths() {
+  const pisosData = await getCollection("pisos", ({ data }) => {
+    return data.type === "spc";
+  });
+
+  return pisosData.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+
+<Layout title={entry.data.id}>
+  <TemplatePisos piso={entry} />
+</Layout>

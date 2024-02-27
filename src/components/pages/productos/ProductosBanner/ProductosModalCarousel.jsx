@@ -13,7 +13,7 @@ const BannerModalCarousel = ({ items }) => {
         items.map((e, index) => (
           <SwiperSlide key={index} className="!flex justify-center">
             <img
-              className="rounded-lg object-cover"
+              className="rounded-2xl object-cover"
               src={e.src}
               alt="carousel images"
             />

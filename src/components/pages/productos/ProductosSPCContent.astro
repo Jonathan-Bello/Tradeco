@@ -1,0 +1,69 @@
+---
+import { getCollection } from "astro:content";
+import ProductosPisosCard from "./ProductosPisosCard.astro";
+import vectorSPCMobile from "../../../assets/svg/vectorSPCMobile.svg";
+import vectorSPCDesk from "../../../assets/svg/vectorSPCDesk.svg";
+
+const pisosSPCData = await getCollection("pisos", ({ data }) => {
+  return data.type === "spc";
+});
+---
+
+<section class="container px-4 mt-10 mb-12 md:px-0 lg:mt-12">
+  <h2
+    class="text-tertiary-500 font-title uppercase tracking-[3.20px] leading-[40px]
+  text-4xl mb-8"
+  >
+    Piso vinílico <br />
+    <span class="text-primary-500 text-6xl">Artis SPC</span>
+  </h2>
+
+  <p class="text-primary-500 text-base tracking-wider mb-4">
+    El piso vinílico <b>Artis de SPC</b> (Stone Plastic Composite) es fabricado con
+    una mezcla de polímeros que contienen carbonato de calcio (CaCO3).
+  </p>
+
+  <ul class="list-disc ml-6 mb-6 tracking-wider">
+    <li class="mb-1">Instalación con adhesivo</li>
+    <li class="mb-1">Base rígida</li>
+    <li class="mb-1">Impermeable</li>
+    <li class="mb-1">Resistente a la humedad y el uso de tacones</li>
+    <li class="mb-1">Antibacterial</li>
+    <li class="mb-1">Retardante de fuego</li>
+    <li class="mb-1">Garantiza una excelente estabilidad dimensional</li>
+  </ul>
+
+  <picture class="flex justify-end md:relative top-[-8rem] lg:top-[-12rem]">
+    <source media="(max-width: 1023px)" srcset={vectorSPCMobile.src} />
+    <source media="(min-width: 1024px)" srcset={vectorSPCDesk.src} />
+    <img
+      class="w-full lg:max-w-[85%]"
+      src={vectorSPCDesk.src}
+      alt={"grafico"}
+    />
+  </picture>
+
+  <h2
+    class="mt-16 md:mt-[-8rem] mb-6 lg:mb-8 font-title text-5xl lg:text-6xl text-primary-500 tracking-widest"
+  >
+    Modelos
+  </h2>
+  <div
+    class="grid gap-2 gap-y-8 lg:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+  >
+    {
+      pisosSPCData.map((piso) => {
+        return (
+          <ProductosPisosCard
+            id={piso.id}
+            img={piso.data.image}
+            title={piso.data.title}
+            type={piso.data.type}
+          />
+        );
+      })
+    }
+  </div>
+</section>
+
+<style></style>
