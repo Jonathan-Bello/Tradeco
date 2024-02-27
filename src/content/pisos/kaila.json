@@ -1,12 +1,11 @@
 {
-    "id": "Kaila",
-    "title": "Kaila",
-    "type": "lvt",
-    "image": "../../assets/imgs/pisos/kaila/kaila.jpg",
-    "bannerImgs": [
-      "../../assets/imgs/pisos/kaila/kailaPortada.jpg",
-      "../../assets/imgs/pisos/kaila/kaila.jpg"
-    ],
-    "similarProductIDs": ["Ares","Atica","Boreas","Cibelle"]
-  }
-  
+  "id": "Kaila",
+  "title": "Kaila",
+  "type": "lvt",
+  "image": "../../assets/imgs/pisos/kaila/kaila.jpg",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/kaila/kailaPortada.jpg",
+    "../../assets/imgs/pisos/kaila/kaila.jpg"
+  ],
+  "similarProductIDs": ["ares", "atica", "boreas", "cibeles"]
+}

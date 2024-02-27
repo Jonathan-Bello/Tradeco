@@ -1,12 +1,12 @@
 {
     "id": "Massy_Oak",
     "title": "Massy Oak",
-    "type": "lvt",
+    "type": "spc",
     "image": "../../assets/imgs/pisos/massy_oak/massy_oak.jpg",
     "bannerImgs": [
       "../../assets/imgs/pisos/massy_oak/massy_oakPortada.jpg",
       "../../assets/imgs/pisos/massy_oak/massy_oak.jpg"
     ],
-    "similarProductIDs": ["Canadian_Grey","Carbon","Coco_Oak","White_Oak"]
+    "similarProductIDs": ["canadian_grey","carbon","coco_oak","white_oak"]
   }
   

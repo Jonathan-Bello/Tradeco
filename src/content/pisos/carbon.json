@@ -1,12 +1,12 @@
 {
     "id": "Carbon",
     "title": "Carbon",
-    "type": "lvt",
+    "type": "spc",
     "image": "../../assets/imgs/pisos/carbon/carbon.jpg",
     "bannerImgs": [
       "../../assets/imgs/pisos/carbon/carbonPortada.jpg",
       "../../assets/imgs/pisos/carbon/carbon.jpg"
     ],
-    "similarProductIDs": ["Canadian_Grey","Coco_Oak","Massy_Oak","White_Oak"]
+    "similarProductIDs": ["canadian_grey","coco_oak","massy_oak","white_oak"]
   }
   

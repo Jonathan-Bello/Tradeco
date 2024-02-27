@@ -1,12 +1,11 @@
 {
-    "id": "Odra",
-    "title": "Odra",
-    "type": "lvt",
-    "image": "../../assets/imgs/pisos/odra/odra.jpg",
-    "bannerImgs": [
-      "../../assets/imgs/pisos/odra/odraPortada.jpg",
-      "../../assets/imgs/pisos/odra/odra.jpg"
-    ],
-    "similarProductIDs": ["Ares","Atica","Boreas","Cibelle"]
-  }
-  
+  "id": "Odra",
+  "title": "Odra",
+  "type": "lvt",
+  "image": "../../assets/imgs/pisos/odra/odra.jpg",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/odra/odraPortada.jpg",
+    "../../assets/imgs/pisos/odra/odra.jpg"
+  ],
+  "similarProductIDs": ["ares", "atica", "boreas", "cibeles"]
+}

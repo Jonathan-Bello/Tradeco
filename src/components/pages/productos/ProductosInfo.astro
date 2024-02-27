@@ -1,0 +1,47 @@
+---
+import ProductosInfoCard from "./ProductosInfoCard";
+
+import IconCatalogoDigital from "@/assets/svg/icon-catalog.svg";
+import IconFichatecnica from "@/assets/svg/icon-fichatecnica.svg";
+import IconGarantia from "@/assets/svg/icon-garantia.svg";
+import IconMantenimiento from "@/assets/svg/icon-mantenimiento.svg";
+import IconManual from "@/assets/svg/icon-manual-de-instalacion.svg";
+
+import manualLVT from "@/assets/svg/manual-lvt.svg";
+import fichaLVT from "@/assets/svg/ficha-tecnica-lvt.svg";
+
+import manualSPC from "@/assets/svg/manual-spc.svg";
+import fichaSPC from "@/assets/svg/ficha-tecnica-spc.svg";
+
+type Props = {
+  type: string;
+};
+
+const { type } = Astro.props;
+---
+
+<section>
+  <ProductosInfoCard
+    image={IconManual}
+    title={"Manual de instalación"}
+    modalImg={type === "lvt" ? manualLVT : manualSPC}
+  />
+  <ProductosInfoCard
+    image={IconGarantia}
+    title={"Garantía limitada"}
+    url={""}
+  />
+  <ProductosInfoCard image={IconCatalogoDigital} title={"Catálogo digital"} />
+  <ProductosInfoCard
+    image={IconFichatecnica}
+    title={"Ficha técnica"}
+    modalImg={type === "lvt" ? fichaLVT : fichaSPC}
+  />
+  <ProductosInfoCard
+    image={IconMantenimiento}
+    title={"Mantenimiento y uso diario"}
+    modalImg
+  />
+</section>
+
+<style></style>

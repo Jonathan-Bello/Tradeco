@@ -2,10 +2,10 @@
   "id": "Cibele",
   "title": "Cibele",
   "type": "lvt",
-  "image": "../../assets/imgs/pisos/cibele/cibele.jpg",
+  "image": "../../assets/imgs/pisos/cibeles/cibeles.jpg",
   "bannerImgs": [
-    "../../assets/imgs/pisos/cibele/cibelePortada.jpg",
-    "../../assets/imgs/pisos/cibele/cibele.jpg"
+    "../../assets/imgs/pisos/cibeles/cibelesPortada.jpg",
+    "../../assets/imgs/pisos/cibeles/cibeles.jpg"
   ],
-  "similarProductIDs": ["Ares", "Atica","Boreas","Hera"]
+  "similarProductIDs": ["ares", "atica", "boreas", "hera"]
 }
