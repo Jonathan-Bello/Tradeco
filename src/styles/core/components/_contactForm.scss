@@ -1,0 +1,26 @@
+.ContactForm {
+  div {
+    display: flex;
+    flex-direction: column;
+    @apply mb-4;
+  }
+
+  label {
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+
+    @apply text-primary-500 mb-4 w-full;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 0.875em;
+    border-radius: 0.75rem;
+    border: 1px solid var(--Gray-3, #828282);
+
+    @apply bg-white py-3 px-4 w-full mt-2;
+  }
+}
