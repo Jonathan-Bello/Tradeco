@@ -20,28 +20,46 @@ type Props = {
 const { type } = Astro.props;
 ---
 
-<section>
+<section
+  class="container px-4 md:px-0 gap-4 lg:gap-8
+  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+>
   <ProductosInfoCard
+    client:load
     image={IconManual}
     title={"Manual de instalación"}
     modalImg={type === "lvt" ? manualLVT : manualSPC}
   />
   <ProductosInfoCard
+    client:load
     image={IconGarantia}
     title={"Garantía limitada"}
     url={""}
   />
-  <ProductosInfoCard image={IconCatalogoDigital} title={"Catálogo digital"} />
-  <ProductosInfoCard
-    image={IconFichatecnica}
-    title={"Ficha técnica"}
-    modalImg={type === "lvt" ? fichaLVT : fichaSPC}
-  />
-  <ProductosInfoCard
-    image={IconMantenimiento}
-    title={"Mantenimiento y uso diario"}
-    modalImg
-  />
+
+  <div class="xl:col-span-2">
+    <ProductosInfoCard
+      client:load
+      image={IconCatalogoDigital}
+      title={"Catálogo digital"}
+    />
+  </div>
+
+  <div class="xl:col-span-2">
+    <ProductosInfoCard
+      client:load
+      image={IconFichatecnica}
+      title={"Ficha técnica"}
+      modalImg={type === "lvt" ? fichaLVT : fichaSPC}
+    />
+  </div>
+  <div class="sm:col-span-2 xl:col-span-2">
+    <ProductosInfoCard
+      client:load
+      image={IconMantenimiento}
+      title={"Mantenimiento y uso diario"}
+    />
+  </div>
 </section>
 
 <style></style>

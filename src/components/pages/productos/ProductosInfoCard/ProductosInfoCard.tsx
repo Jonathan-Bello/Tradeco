@@ -1,9 +1,10 @@
+import ModalBase from "@/components/modals/ModalBase";
 import { useState } from "react";
 
 interface ProductosInfoCardProps {
-  image: ImageMetaData;
+  image: ImageMetadata;
   title: string;
-  modalImg?: ImageMetaData;
+  modalImg?: ImageMetadata;
   url?: string;
 }
 
@@ -14,11 +15,28 @@ const ProductosInfoCard = ({
   url,
 }: ProductosInfoCardProps) => {
   const [showModal, setShowModal] = useState(false);
-  return (
-    <article>
-      <img src={image.src} alt={title} />
 
-      <p className="">{title}</p>
+  return (
+    <article className="flex flex-col items-center">
+      <img className="size-20 relative top-8" src={image.src} alt={title} />
+
+      <p
+        className="w-full cursor-pointer
+        bg-secondary-500 text-primary-500 rounded-xl
+        text-center px-10 pt-10 pb-6
+        text-lg font-title tracking-widest"
+        onClick={() => setShowModal(!showModal)}
+      >
+        {title}
+      </p>
+
+      {modalImg && (
+        <ModalBase show={showModal} setShow={setShowModal}>
+          <div className="rounded-lg overflow-auto w-5/6 lg:w-4/6 my-16 md:my-8">
+            <img src={modalImg.src} />
+          </div>
+        </ModalBase>
+      )}
     </article>
   );
 };
