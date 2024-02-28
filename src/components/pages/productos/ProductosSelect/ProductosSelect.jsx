@@ -20,7 +20,7 @@ const ProductosSelect = (props) => {
         </button>
       </div>
 
-      <div className="ProductosSelect__content">
+      <div className="ProductosSelect__content mb-12">
         {typeSelected === 1 ? props.pisos : props.piedras}
       </div>
     </section>

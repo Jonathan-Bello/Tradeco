@@ -13,10 +13,7 @@ import imgPiedra03 from "../../../assets/imgs/productos/Piedra03.jpg";
 <>
   <BannerSmall />
   <ProductosSelect client:load transition:persist>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 gap-x-4"
-      slot="pisos"
-    >
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4" slot="pisos">
       <ProductTypeCard
         imgBackground={imgPiso01}
         title="Piso vinílico Artis LVT"
@@ -33,17 +30,17 @@ import imgPiedra03 from "../../../assets/imgs/productos/Piedra03.jpg";
       <ProductTypeCard
         imgBackground={imgPiedra01}
         title="Perdura Stone"
-        link="/productos/perdura-stone"
+        link="http://www.perdurastone.com"
       />
       <ProductTypeCard
         imgBackground={imgPiedra02}
         title="Imperial stone"
-        link="/productos/imperial-stone"
+        link="http://www.imperialstone.com.mx"
       />
       <ProductTypeCard
         imgBackground={imgPiedra03}
         title="Stona"
-        link="/productos/stona"
+        link="http://stona.com.mx"
       />
     </div>
   </ProductosSelect>
