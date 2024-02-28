@@ -1,0 +1,34 @@
+.Header {
+  @apply relative;
+
+  &__content {
+    &__links {
+      @media (max-width: 768px) {
+        position: absolute;
+        z-index: 10;
+        background-color: white;
+        width: 100vw;
+        left: 0;
+        top: 5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        opacity: 0;
+        transition:
+          opacity 0.3s ease-in-out,
+          top 0.5s ease-in-out;
+
+        @apply py-6 rounded-b-3xl shadow-lg;
+
+        &--active {
+          display: flex;
+          top: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
