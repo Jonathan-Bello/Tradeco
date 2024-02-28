@@ -5,7 +5,7 @@ const ContactForm = () => {
 
   if (state.succeeded) {
     return (
-      <div className="container flex justify-center items-center px-4 py-16">
+      <div className="container flex justify-center items-center px-4 py-16 md:py-24">
         <p className="text-xl lg:text-2xl text-center">
           <b className="inline-block text-3xl mb-4 font-semibold">
             ¡Gracias por contactarnos!
@@ -17,7 +17,7 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="container px-4 py-16">
+    <section className="container px-4 py-16 md:py-24">
       <form
         onSubmit={handleSubmit}
         className="ContactForm grid grid-cols-1 md:grid-cols-2 gap-6"
