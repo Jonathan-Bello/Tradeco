@@ -13,7 +13,7 @@ const ProductosBanner = ({ arrayImgs }) => {
       h-40 sm:h-48 md:h-52 lg:h-80
       bg-cover"
       style={{
-        backgroundImage: `url(${arrayImgs[0].src}.src)`,
+        backgroundImage: `url(${arrayImgs[0].src})`,
       }}
     >
       <div
