@@ -27,7 +27,8 @@ const { id, img, title, type } = Astro.props;
   <a
     href=`/productos/${type === "lvt" ? "pisos-lvt" : "pisos-spc"}/${id}`
     class="text-accent-500 text-left underline
-    font-light text-sm lg:text-lg tracking-[2px]"
+    font-light text-sm lg:text-lg tracking-[2px]
+    hover:text-accent-900 hover:font-normal"
     >Ver más detalles</a
   >
 </article>

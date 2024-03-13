@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const currentPath = window.location.pathname;
 
   return (
     <header className="Header shadow-lg flex justify-center w-full h-20 lg:h-auto">
@@ -39,13 +40,28 @@ const Header = () => {
           md:flex md:justify-end md:flex-1 md:space-x-20 md:pr-16`}
         >
           <li>
-            <a href="/">Inicio</a>
+            <a
+              className={`${currentPath === "/" && "font-medium"} hover:text-accent-900 hover:font-medium`}
+              href="/"
+            >
+              Inicio
+            </a>
           </li>
           <li>
-            <a href="/productos">Productos</a>
+            <a
+              className={`${currentPath === "/productos" && "font-medium"} hover:text-accent-900 hover:font-medium`}
+              href="/productos"
+            >
+              Productos
+            </a>
           </li>
           <li>
-            <a href="/contacto">Contacto</a>
+            <a
+              className={`${currentPath === "/contacto" && "font-medium"} hover:text-accent-900 hover:font-medium`}
+              href="/contacto"
+            >
+              Contacto
+            </a>
           </li>
 
           <li className={"md:hidden"}>

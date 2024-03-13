@@ -17,7 +17,7 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="container px-4 py-16 md:py-24">
+    <section className="container md:!max-w-screen-md px-4 py-16 md:py-24">
       <form
         onSubmit={handleSubmit}
         className="ContactForm grid grid-cols-1 md:grid-cols-2 gap-6"
@@ -112,7 +112,7 @@ const ContactForm = () => {
 
         <div className="md:col-span-2">
           <button
-            className="w-56 self-center text-center border-2 border-accent-500 text-accent-500 px-6 py-3 rounded-full"
+            className="w-56 self-center text-center border-2 border-accent-500 text-accent-500 px-6 py-3 rounded-full hover:bg-accent-500 hover:text-white"
             type="submit"
             disabled={state.submitting}
           >

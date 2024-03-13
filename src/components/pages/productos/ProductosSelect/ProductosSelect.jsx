@@ -7,13 +7,13 @@ const ProductosSelect = (props) => {
     <section className="ProductosSelect container">
       <div className="ProductosSelect__selector grid grid-cols-2">
         <button
-          className={`ProductosSelect__selector__btn ${typeSelected === 1 && "ProductosSelect__selector__btn--active"}`}
+          className={`ProductosSelect__selector__btn ${typeSelected === 1 ? "ProductosSelect__selector__btn--active" : "hover:bg-primary-400 hover:text-white"}`}
           onClick={() => setTypeSelected(1)}
         >
           Pisos vinílicos
         </button>
         <button
-          className={`ProductosSelect__selector__btn ${typeSelected === 2 && "ProductosSelect__selector__btn--active"}`}
+          className={`ProductosSelect__selector__btn ${typeSelected === 2 ? "ProductosSelect__selector__btn--active" : "hover:bg-primary-400 hover:text-white"}`}
           onClick={() => setTypeSelected(2)}
         >
           Piedras
