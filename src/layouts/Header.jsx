@@ -9,7 +9,7 @@ const Header = () => {
   const currentPath = window.location.pathname;
 
   return (
-    <header className="Header shadow-lg flex justify-center w-full h-20 lg:h-auto">
+    <header className="Header top-0 shadow-lg flex justify-center w-full h-20 lg:h-auto">
       <div
         className="Header__content container flex items-center
         justify-between px-4 py-5"

@@ -16,8 +16,10 @@ const CarouselMain = ({ items }) => {
       className="container !px-4 md:!mx-0 md:!px-0 mt-8 mb-16 lg:mb-36"
       autoplay={true}
       breakpoints={{
-        slidesPerView: 1,
-        spaceBetween: 8,
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 8,
+        },
         640: {
           slidesPerView: 2,
           spaceBetween: 8,

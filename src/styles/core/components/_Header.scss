@@ -1,5 +1,5 @@
 .Header {
-  @apply relative;
+  @apply fixed bg-white z-10;
 
   &__content {
     &__links {
