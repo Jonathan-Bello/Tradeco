@@ -2,6 +2,7 @@
 import { ViewTransitions } from "astro:transitions";
 import Header from "./Header";
 import Footer from "./Footer.astro";
+import WhatsAppBtn from "./WhatsAppBtn.astro";
 import GlobalStyles from "../styles/GlobalStyles.astro";
 
 interface Props {
@@ -56,6 +57,8 @@ const { title } = Astro.props;
     <Header client:load />
     <main class="flex flex-col justify-center items-center">
       <slot />
+
+      <WhatsAppBtn />
     </main>
     <Footer />
     <GlobalStyles />

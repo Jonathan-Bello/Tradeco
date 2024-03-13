@@ -14,6 +14,7 @@ const CarouselMain = ({ items }) => {
       pagination={pagination}
       modules={[Pagination]}
       className="container !px-4 md:!mx-0 mt-8 mb-16 lg:mb-36"
+      autoplay={true}
       breakpoints={{
         slidesPerView: 1,
         spaceBetween: 8,
