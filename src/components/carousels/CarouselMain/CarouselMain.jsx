@@ -44,7 +44,7 @@ const CarouselMain = ({ items }) => {
               alt="carousel images"
             />
 
-            <h3 className="font-sans font-medium text-center text-primary-500 text-base pb-12 px-4">
+            <h3 className="font-sans font-medium text-center text-primary-500 text-base pb-12 px-4 text-gri">
               {e.title}
             </h3>
           </SwiperSlide>

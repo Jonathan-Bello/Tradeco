@@ -20,14 +20,15 @@ for (let i = 0; i < backgroundImgs.length; i++) {
 }
 ---
 
-<section
+<!-- <banner-main> -->
+<banner-main
   id="bannerPrincipal"
   data-images={JSON.stringify(optimizedImages)}
-  class="banner w-11/12 md:container relative
+  class=`banner w-11/12 md:container relative
   mx-4 md:mx-0 my-3 lg:my-8
   rounded-3xl overflow-hidden
   h-96 md:h-[32rem] lg:h-[36rem]
-  bg-[length:auto_100%] md:bg-cover"
+  bg-[length:auto_100%] md:bg-cover`
   style={`background-image: url(${optimizedImages[0].src});`}
 >
   <p
@@ -42,7 +43,8 @@ for (let i = 0; i < backgroundImgs.length; i++) {
       class="font-semibold">cada uno de tus espacios</b
     >
   </p>
-</section>
+</banner-main>
+<!-- </banner-main> -->
 
 <style>
   .banner {
@@ -59,21 +61,30 @@ for (let i = 0; i < backgroundImgs.length; i++) {
 </style>
 
 <script>
-  // Obtener el elemento del banner
-  const banner = document.getElementById("bannerPrincipal");
+  class BannerMain extends HTMLElement {
+    constructor() {
+      super();
+    }
 
-  // Obtenemos las imagenes apartir del dataset, transformando el string a JSON
-  const imgs = JSON.parse(banner.dataset.images);
+    connectedCallback() {
+      const imgs = JSON.parse(this.getAttribute("data-images"));
+      let currentIndex = 0;
 
-  // Índice actual de la imagen
-  let currentIndex = 0;
+      const changeBackground = () => {
+        currentIndex = (currentIndex + 1) % imgs.length;
+        this.style.backgroundImage = `url(${imgs[currentIndex].src})`;
+        // console.log("cammbio de imagen", currentIndex);
+      };
 
-  // Función para cambiar la imagen de fondo
-  function changeBackground() {
-    currentIndex = (currentIndex + 1) % imgs.length;
-    banner.style.backgroundImage = `url(${imgs[currentIndex].src})`;
+      changeBackground();
+      this.intervalId = setInterval(changeBackground, 3000);
+    }
+
+    disconnectedCallback() {
+      console.log("paro de intervalo");
+      clearInterval(this.intervalId);
+    }
   }
 
-  // Cambiar la imagen de fondo cada 5 segundos
-  setInterval(changeBackground, 3000);
+  customElements.define("banner-main", BannerMain);
 </script>
