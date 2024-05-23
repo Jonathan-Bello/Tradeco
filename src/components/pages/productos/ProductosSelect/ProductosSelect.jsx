@@ -4,7 +4,7 @@ const ProductosSelect = (props) => {
   const [typeSelected, setTypeSelected] = useState(1);
 
   return (
-    <section className="ProductosSelect container">
+    <section className="ProductosSelect container flex-1">
       <div className="ProductosSelect__selector grid grid-cols-2">
         <button
           className={`ProductosSelect__selector__btn ${typeSelected === 1 ? "ProductosSelect__selector__btn--active" : "hover:bg-primary-400 hover:text-white"}`}
