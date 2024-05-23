@@ -78,7 +78,7 @@ const ContactForm = () => {
             <option value="Hera">Hera</option>
             <option value="Hydra">Hydra</option>
             <option value="Isis">Isis</option>
-            <option value="Kaila">Kaila</option>
+            <option value="Kalia">Kalia</option>
             <option value="Kiara">Kiara</option>
             <option value="Massy Oak">Massy Oak</option>
             <option value="Odra">Odra</option>

@@ -6,10 +6,10 @@ import ProductosInfo from "@/components/pages/productos/ProductosInfo.astro";
 ---
 
 <Layout title="Pisos vinilico artis LVT">
-  <ProductosContent />
-
-  <ProductosLVTContent />
-  <ProductosInfo type="lvt" />
+  <ProductosContent type="lvt">
+    <ProductosLVTContent />
+    <ProductosInfo type="lvt" />
+  </ProductosContent>
 </Layout>
 
 <style></style>

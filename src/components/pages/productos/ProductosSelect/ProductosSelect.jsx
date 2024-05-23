@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Children, useState } from "react";
 
 const ProductosSelect = (props) => {
   const [typeSelected, setTypeSelected] = useState(1);
@@ -23,6 +23,8 @@ const ProductosSelect = (props) => {
       <div className="ProductosSelect__content mb-12">
         {typeSelected === 1 ? props.pisos : props.piedras}
       </div>
+
+      {typeSelected === 1 ? props.children : null}
     </section>
   );
 };

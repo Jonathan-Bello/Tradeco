@@ -12,7 +12,7 @@ import imgPiedra03 from "../../../assets/imgs/productos/Piedra03.jpg";
 
 <>
   <BannerSmall />
-  <ProductosSelect client:load transition:persist>
+  <ProductosSelect client:load>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4" slot="pisos">
       <ProductTypeCard
         imgBackground={imgPiso01}
@@ -43,6 +43,8 @@ import imgPiedra03 from "../../../assets/imgs/productos/Piedra03.jpg";
         link="http://stona.com.mx"
       />
     </div>
+
+    <slot />
   </ProductosSelect>
 </>
 
