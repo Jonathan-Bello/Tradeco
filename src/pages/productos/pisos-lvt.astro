@@ -3,10 +3,11 @@ import Layout from "../../layouts/Layout.astro";
 import ProductosContent from "../../components/pages/productos/ProductosContent.astro";
 import ProductosLVTContent from "../../components/pages/productos/ProductosLVTContent.astro";
 import ProductosInfo from "@/components/pages/productos/ProductosInfo.astro";
+import bgBannerLvt from "@/assets/imgs/bannerProducts.jpg";
 ---
 
 <Layout title="Pisos vinilico artis LVT">
-  <ProductosContent type="lvt">
+  <ProductosContent bgBanner={bgBannerLvt}>
     <ProductosLVTContent />
     <ProductosInfo type="lvt" />
   </ProductosContent>

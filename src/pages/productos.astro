@@ -1,10 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ProductosContent from "../components/pages/productos/ProductosContent.astro";
+import bgBannerLvt from "@/assets/imgs/bannerProducts.jpg";
 ---
 
 <Layout title="Productos">
-  <ProductosContent  />
+  <ProductosContent bgBanner={bgBannerLvt} />
 </Layout>
 
 <style></style>

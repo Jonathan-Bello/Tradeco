@@ -1,9 +1,14 @@
 ---
 import { getImage } from "astro:assets";
-import myBackground from "../../assets/imgs/bannerProducts.jpg";
+
+interface Props {
+  bgImage: ImageMetadata;
+}
+
+const { bgImage } = Astro.props;
 
 const optimizedBackground = await getImage({
-  src: myBackground,
+  src: bgImage,
   format: "jpg",
 });
 ---

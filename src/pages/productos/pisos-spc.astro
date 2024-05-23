@@ -3,10 +3,11 @@ import Layout from "../../layouts/Layout.astro";
 import ProductosContent from "../../components/pages/productos/ProductosContent.astro";
 import ProductosSPCContent from "@/components/pages/productos/ProductosSPCContent.astro";
 import ProductosInfo from "@/components/pages/productos/ProductosInfo.astro";
+import bgBannerSpc from "@/assets/imgs/bannerProducts.jpg";
 ---
 
-<Layout title="Pisos vinilico artis LVT">
-  <ProductosContent>
+<Layout title="Pisos vinilico artiSpc">
+  <ProductosContent bgBanner={bgBannerSpc}>
     <ProductosSPCContent />
     <ProductosInfo type="spc" />
   </ProductosContent>

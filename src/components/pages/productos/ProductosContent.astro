@@ -1,18 +1,22 @@
 ---
-import BannerSmall from "../../banners/BannerSmall.astro";
 import ProductosSelect from "./ProductosSelect";
 import ProductTypeCard from "./ProductosSelect/ProductTypeCard.astro";
+import BannerSmall from "../../banners/BannerSmall.astro";
 
-import imgPiso01 from "../../../assets/imgs/productos/Piso01.jpg";
-import imgPiso02 from "../../../assets/imgs/productos/Piso02.jpg";
-import imgPiedra01 from "../../../assets/imgs/productos/Piedra01.jpg";
-import imgPiedra02 from "../../../assets/imgs/productos/Piedra02.jpg";
-import imgPiedra03 from "../../../assets/imgs/productos/Piedra03.jpg";
+import bgBannerPisos from "@/assets/imgs/bannerProducts.jpg";
+import bgBannerPiedras from "@/assets/imgs/bannerProductsPiedras.jpg";
+import imgPiso01 from "@/assets/imgs/productos/Piso01.jpg";
+import imgPiso02 from "@/assets/imgs/productos/Piso02.jpg";
+import imgPiedra01 from "@/assets/imgs/productos/Piedra01.jpg";
+import imgPiedra02 from "@/assets/imgs/productos/Piedra02.jpg";
+import imgPiedra03 from "@/assets/imgs/productos/Piedra03.jpg";
 ---
 
 <>
-  <BannerSmall />
-  <ProductosSelect client:load>
+<ProductosSelect client:load>
+    <BannerSmall bgImage={bgBannerPisos} slot="bannerPisos"/>
+    <BannerSmall bgImage={bgBannerPiedras} slot="bannerPiedras"/>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4" slot="pisos">
       <ProductTypeCard
         imgBackground={imgPiso01}
