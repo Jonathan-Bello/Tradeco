@@ -18,7 +18,7 @@ const pisosSPCData = await getCollection("pisos", ({ data }) => {
     <span class="text-primary-500 text-6xl">Artis SPC</span>
   </h2>
 
-  <p class="text-primary-500 text-base tracking-wider mb-4">
+  <p class="text-primary-500 text-lg tracking-wider mb-4 max-w-4xl">
     El piso vinílico <b>Artis de SPC</b> (Stone Plastic Composite) es fabricado con
     una mezcla de polímeros que contienen carbonato de calcio (CaCO3).
   </p>
@@ -33,11 +33,11 @@ const pisosSPCData = await getCollection("pisos", ({ data }) => {
     <li class="mb-1">Garantiza una excelente estabilidad dimensional</li>
   </ul>
 
-  <picture class="flex justify-end md:relative top-[-8rem] lg:top-[-12rem]">
+  <picture class="flex justify-end md:relative top-[-8rem] lg:top-[-14rem]">
     <source media="(max-width: 1023px)" srcset={vectorSPCMobile.src} />
     <source media="(min-width: 1024px)" srcset={vectorSPCDesk.src} />
     <img
-      class="w-full lg:max-w-[85%]"
+      class="w-full lg:max-w-[60%]"
       src={vectorSPCDesk.src}
       alt={"grafico"}
     />
