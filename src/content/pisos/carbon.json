@@ -3,10 +3,10 @@
   "order": 4,
   "title": "Carbon",
   "type": "spc",
-  "image": "../../assets/imgs/pisos/carbon/carbon.jpg",
+  "image": "../../assets/imgs/pisos/carbon/carbon.png",
   "bannerImgs": [
     "../../assets/imgs/pisos/carbon/carbonPortada.jpg",
-    "../../assets/imgs/pisos/carbon/carbon.jpg"
+    "../../assets/imgs/pisos/carbon/carbon.png"
   ],
   "similarProductIDs": ["canadian_grey", "coco_oak", "massy_oak", "white_oak"]
 }

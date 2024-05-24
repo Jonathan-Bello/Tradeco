@@ -3,10 +3,10 @@
   "order": 6,
   "title": "Coco Oak",
   "type": "spc",
-  "image": "../../assets/imgs/pisos/coco_oak/coco_oak.jpg",
+  "image": "../../assets/imgs/pisos/coco_oak/coco_oak.png",
   "bannerImgs": [
     "../../assets/imgs/pisos/coco_oak/coco_oakPortada.jpg",
-    "../../assets/imgs/pisos/coco_oak/coco_oak.jpg"
+    "../../assets/imgs/pisos/coco_oak/coco_oak.png"
   ],
   "similarProductIDs": ["canadian_grey", "carbon", "massy_oak", "white_oak"]
 }

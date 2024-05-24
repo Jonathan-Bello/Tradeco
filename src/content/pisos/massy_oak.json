@@ -3,10 +3,10 @@
   "order": 5,
   "title": "Massy Oak",
   "type": "spc",
-  "image": "../../assets/imgs/pisos/massy_oak/massy_oak.jpg",
+  "image": "../../assets/imgs/pisos/massy_oak/massy_oak.png",
   "bannerImgs": [
     "../../assets/imgs/pisos/massy_oak/massy_oakPortada.jpg",
-    "../../assets/imgs/pisos/massy_oak/massy_oak.jpg"
+    "../../assets/imgs/pisos/massy_oak/massy_oak.png"
   ],
   "similarProductIDs": ["canadian_grey", "carbon", "coco_oak", "white_oak"]
 }
