@@ -21,23 +21,23 @@ const { type } = Astro.props;
       image={IconManual}
       title={"Manual de instalación"}
       url={type === "lvt"
-        ? "/public/pdfs/lvtInfo/Manual_LVT.pdf"
-        : "/public/pdfs/spcInfo/Manual_SPC.pdf"}
+        ? "/pdfs/lvtInfo/Manual_LVT.pdf"
+        : "/pdfs/spcInfo/Manual_SPC.pdf"}
     />
     <ProductosInfoCard
       client:load
       image={IconGarantia}
       title={"Garantía limitada"}
       url={type === "lvt"
-        ? "/public/pdfs/lvtInfo/Garantia_LVT.pdf"
-        : "/public/pdfs/spcInfo/Garantia_SPC.pdf"}
+        ? "/pdfs/lvtInfo/Garantia_LVT.pdf"
+        : "/pdfs/spcInfo/Garantia_SPC.pdf"}
     />
 
     <ProductosInfoCard
       client:load
       image={IconCatalogoDigital}
       title={"Catálogo digital"}
-      url="/public/pdfs/catalogo.pdf"
+      url="/pdfs/catalogo.pdf"
     />
   </div>
 
@@ -48,8 +48,8 @@ const { type } = Astro.props;
         image={IconFichatecnica}
         title={"Ficha técnica"}
         url={type === "lvt"
-          ? "/public/pdfs/lvtInfo/Ficha_Tecnica_LVT.pdf"
-          : "/public/pdfs/spcInfo/Ficha_Tecnica_SPC.pdf"}
+          ? "/pdfs/lvtInfo/Ficha_Tecnica_LVT.pdf"
+          : "/pdfs/spcInfo/Ficha_Tecnica_SPC.pdf"}
       />
     </div>
     <div class="">
@@ -58,8 +58,8 @@ const { type } = Astro.props;
         image={IconMantenimiento}
         title={"Mantenimiento y uso diario"}
         url={type === "lvt"
-          ? "/public/pdfs/lvtInfo/Mantenimiento_LVT.pdf"
-          : "/public/pdfs/spcInfo/Mantenimiento_SPC.pdf"}
+          ? "/pdfs/lvtInfo/Mantenimiento_LVT.pdf"
+          : "/pdfs/spcInfo/Mantenimiento_SPC.pdf"}
       />
     </div>
   </div>
