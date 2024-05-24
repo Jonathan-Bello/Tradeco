@@ -27,13 +27,15 @@ const similarPisos = await getEntries(piso.data.similarProductIDs);
     alt="imagen"
   />
 
-  <div class="flex flex-col relative top-14 sm:top-0 md:top-0 lg:pb-1">
-    <h1 class="font-title text-5xl mb-2 lg:mb-4 tracking-wider uppercase">
+  <div class="flex flex-col relative top-14 sm:top-0 md:top-0 lg:pb-1 mb-4 md:mb-0">
+    <h1 class="font-title text-3xl md:text-5xl mb-2 lg:mb-4 tracking-wider uppercase">
       {piso.data.title}
     </h1>
 
     <a
-      class="text-center border-2 border-accent-500 text-accent-500 px-6 py-3 rounded-full hover:bg-accent-500 hover:text-white"
+      class="text-center text-base
+      border-2 border-accent-500 text-accent-500 px-6 py-3 rounded-full
+      hover:bg-accent-500 hover:text-white"
       href="/contacto">Estoy interesado</a
     >
   </div>
