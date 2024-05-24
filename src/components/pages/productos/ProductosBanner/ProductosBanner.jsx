@@ -10,7 +10,7 @@ const ProductosBanner = ({ arrayImgs }) => {
     <section
       className="ProductosBanner relative w-11/12 md:container
       rounded-lg overflow-hidden
-      h-40 sm:h-48 md:h-52 lg:h-[30rem]
+      h-40 sm:h-48 md:h-52 lg:h-[35rem]
       bg-cover bg-bottom"
       style={{
         backgroundImage: `url(${arrayImgs[0].src})`,
