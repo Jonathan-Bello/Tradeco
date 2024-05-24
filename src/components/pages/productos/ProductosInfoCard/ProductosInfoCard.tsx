@@ -21,7 +21,7 @@ const ProductosInfoCard = ({
       <img className="size-20 relative top-8" src={image.src} alt={title} />
 
       {url ? (
-        <a className="w-full" href={url}>
+        <a className="w-full" href={url} target="_blank">
           <p
             className="w-full cursor-pointer
             bg-secondary-500 text-primary-500 rounded-xl

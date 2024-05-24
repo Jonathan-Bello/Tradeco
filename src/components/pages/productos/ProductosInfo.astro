@@ -7,12 +7,6 @@ import IconGarantia from "@/assets/svg/icon-garantia.svg";
 import IconMantenimiento from "@/assets/svg/icon-mantenimiento.svg";
 import IconManual from "@/assets/svg/icon-manual-de-instalacion.svg";
 
-import manualLVT from "@/assets/svg/manual-lvt.svg";
-import fichaLVT from "@/assets/svg/ficha-tecnica-lvt.svg";
-
-import manualSPC from "@/assets/svg/manual-spc.svg";
-import fichaSPC from "@/assets/svg/ficha-tecnica-spc.svg";
-
 type Props = {
   type: string;
 };
@@ -26,22 +20,24 @@ const { type } = Astro.props;
       client:load
       image={IconManual}
       title={"Manual de instalación"}
-      modalImg={type === "lvt" ? manualLVT : manualSPC}
+      url={type === "lvt"
+        ? "/public/pdfs/lvtInfo/Manual_LVT.pdf"
+        : "/public/pdfs/spcInfo/Manual_SPC.pdf"}
     />
     <ProductosInfoCard
       client:load
       image={IconGarantia}
       title={"Garantía limitada"}
       url={type === "lvt"
-        ? "/public/pdfs/Garantia_Piso_LVT.pdf"
-        : "/public/pdfs/Garantia_Piso_SPC.pdf"}
+        ? "/public/pdfs/lvtInfo/Garantia_LVT.pdf"
+        : "/public/pdfs/spcInfo/Garantia_SPC.pdf"}
     />
 
     <ProductosInfoCard
       client:load
       image={IconCatalogoDigital}
       title={"Catálogo digital"}
-      url="/public/pdfs/catalogo_digital.pdf"
+      url="/public/pdfs/catalogo.pdf"
     />
   </div>
 
@@ -51,7 +47,9 @@ const { type } = Astro.props;
         client:load
         image={IconFichatecnica}
         title={"Ficha técnica"}
-        modalImg={type === "lvt" ? fichaLVT : fichaSPC}
+        url={type === "lvt"
+          ? "/public/pdfs/lvtInfo/Ficha_Tecnica_LVT.pdf"
+          : "/public/pdfs/spcInfo/Ficha_Tecnica_SPC.pdf"}
       />
     </div>
     <div class="">
@@ -59,7 +57,9 @@ const { type } = Astro.props;
         client:load
         image={IconMantenimiento}
         title={"Mantenimiento y uso diario"}
-        url="https://hogar.tarkett.es/es_ES/node/como-limpiar-y-mantener-un-suelo-vinilico-4505"
+        url={type === "lvt"
+          ? "/public/pdfs/lvtInfo/Mantenimiento_LVT.pdf"
+          : "/public/pdfs/spcInfo/Mantenimiento_SPC.pdf"}
       />
     </div>
   </div>
