@@ -1,12 +1,12 @@
 {
-    "id": "Massy_Oak",
-    "title": "Massy Oak",
-    "type": "spc",
-    "image": "../../assets/imgs/pisos/massy_oak/massy_oak.jpg",
-    "bannerImgs": [
-      "../../assets/imgs/pisos/massy_oak/massy_oakPortada.jpg",
-      "../../assets/imgs/pisos/massy_oak/massy_oak.jpg"
-    ],
-    "similarProductIDs": ["canadian_grey","carbon","coco_oak","white_oak"]
-  }
-  
+  "id": "Massy_Oak",
+  "order": 5,
+  "title": "Massy Oak",
+  "type": "spc",
+  "image": "../../assets/imgs/pisos/massy_oak/massy_oak.jpg",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/massy_oak/massy_oakPortada.jpg",
+    "../../assets/imgs/pisos/massy_oak/massy_oak.jpg"
+  ],
+  "similarProductIDs": ["canadian_grey", "carbon", "coco_oak", "white_oak"]
+}

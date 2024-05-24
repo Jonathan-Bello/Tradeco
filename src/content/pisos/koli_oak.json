@@ -1,0 +1,12 @@
+{
+  "id": "Koli_Oak",
+  "order": 3,
+  "title": "Koli Oak",
+  "type": "spc",
+  "image": "../../assets/imgs/pisos/koli_oak/koli_oak.png",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/koli_oak/koli_oakPortada.png",
+    "../../assets/imgs/pisos/koli_oak/koli_oak.png"
+  ],
+  "similarProductIDs": ["canadian_grey", "carbon", "coco_oak", "white_oak"]
+}

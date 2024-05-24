@@ -1,11 +1,12 @@
 {
   "id": "Odra",
+  "order": 5,
   "title": "Odra",
   "type": "lvt",
-  "image": "../../assets/imgs/pisos/odra/odra.jpg",
+  "image": "../../assets/imgs/pisos/odra/odra.png",
   "bannerImgs": [
     "../../assets/imgs/pisos/odra/odraPortada.jpg",
-    "../../assets/imgs/pisos/odra/odra.jpg"
+    "../../assets/imgs/pisos/odra/odra.png"
   ],
   "similarProductIDs": ["ares", "atica", "boreas", "cibeles"]
 }

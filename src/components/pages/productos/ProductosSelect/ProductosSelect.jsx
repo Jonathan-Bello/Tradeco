@@ -1,4 +1,4 @@
-import { Children, useState } from "react";
+import { useState } from "react";
 
 const ProductosSelect = (props) => {
   const [typeSelected, setTypeSelected] = useState(1);

@@ -1,5 +1,6 @@
 {
   "id": "White_Oak",
+  "order" : 1,
   "title": "White Oak",
   "type": "spc",
   "image": "../../assets/imgs/pisos/white_oak/white_oak.jpg",

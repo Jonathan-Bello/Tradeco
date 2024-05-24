@@ -1,12 +1,12 @@
 {
-    "id": "Hera",
-    "title": "Hera",
-    "type": "lvt",
-    "image": "../../assets/imgs/pisos/hera/hera.jpg",
-    "bannerImgs": [
-      "../../assets/imgs/pisos/hera/heraPortada.jpg",
-      "../../assets/imgs/pisos/hera/hera.jpg"
-    ],
-    "similarProductIDs": ["ares","atica","boreas","cibeles"]
-  }
-  
+  "id": "Hera",
+  "order": 8,
+  "title": "Hera",
+  "type": "lvt",
+  "image": "../../assets/imgs/pisos/hera/hera.png",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/hera/heraPortada.jpg",
+    "../../assets/imgs/pisos/hera/hera.png"
+  ],
+  "similarProductIDs": ["ares", "atica", "boreas", "cibeles"]
+}

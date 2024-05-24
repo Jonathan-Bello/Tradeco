@@ -1,12 +1,12 @@
 {
-    "id": "Isis",
-    "title": "Isis",
-    "type": "lvt",
-    "image": "../../assets/imgs/pisos/isis/isis.jpg",
-    "bannerImgs": [
-      "../../assets/imgs/pisos/isis/isisPortada.jpg",
-      "../../assets/imgs/pisos/isis/isis.jpg"
-    ],
-    "similarProductIDs": ["ares","atica","boreas","cibeles"]
-  }
-  
+  "id": "Isis",
+  "order": 10,
+  "title": "Isis",
+  "type": "lvt",
+  "image": "../../assets/imgs/pisos/isis/isis.png",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/isis/isisPortada.jpg",
+    "../../assets/imgs/pisos/isis/isis.png"
+  ],
+  "similarProductIDs": ["ares", "atica", "boreas", "cibeles"]
+}

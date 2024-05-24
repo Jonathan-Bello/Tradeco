@@ -1,11 +1,12 @@
 {
   "id": "Hydra",
+  "order": 11,
   "title": "Hydra",
   "type": "lvt",
-  "image": "../../assets/imgs/pisos/hydra/hydra.jpg",
+  "image": "../../assets/imgs/pisos/hydra/hydra.png",
   "bannerImgs": [
     "../../assets/imgs/pisos/hydra/hydraPortada.jpg",
-    "../../assets/imgs/pisos/hydra/hydra.jpg"
+    "../../assets/imgs/pisos/hydra/hydra.png"
   ],
   "similarProductIDs": ["ares", "atica", "boreas", "cibeles"]
 }

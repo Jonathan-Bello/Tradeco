@@ -1,11 +1,12 @@
 {
   "id": "Ares",
+  "order": 7,
   "title": "Ares",
   "type": "lvt",
-  "image": "../../assets/imgs/pisos/ares/ares.jpg",
+  "image": "../../assets/imgs/pisos/ares/ares.png",
   "bannerImgs": [
     "../../assets/imgs/pisos/ares/aresPortada.jpg",
-    "../../assets/imgs/pisos/ares/ares.jpg"
+    "../../assets/imgs/pisos/ares/ares.png"
   ],
   "similarProductIDs": ["atica", "boreas", "cibeles", "hera"]
 }

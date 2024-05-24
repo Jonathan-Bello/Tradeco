@@ -1,0 +1,12 @@
+{
+  "id": "Kalia",
+  "order": 4,
+  "title": "Kalia",
+  "type": "lvt",
+  "image": "../../assets/imgs/pisos/kalia/kalia.png",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/kalia/kaliaPortada.jpg",
+    "../../assets/imgs/pisos/kalia/kalia.png"
+  ],
+  "similarProductIDs": ["ares", "atica", "boreas", "cibeles"]
+}

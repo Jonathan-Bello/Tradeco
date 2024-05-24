@@ -1,12 +1,12 @@
 {
-    "id": "Carbon",
-    "title": "Carbon",
-    "type": "spc",
-    "image": "../../assets/imgs/pisos/carbon/carbon.jpg",
-    "bannerImgs": [
-      "../../assets/imgs/pisos/carbon/carbonPortada.jpg",
-      "../../assets/imgs/pisos/carbon/carbon.jpg"
-    ],
-    "similarProductIDs": ["canadian_grey","coco_oak","massy_oak","white_oak"]
-  }
-  
+  "id": "Carbon",
+  "order": 4,
+  "title": "Carbon",
+  "type": "spc",
+  "image": "../../assets/imgs/pisos/carbon/carbon.jpg",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/carbon/carbonPortada.jpg",
+    "../../assets/imgs/pisos/carbon/carbon.jpg"
+  ],
+  "similarProductIDs": ["canadian_grey", "coco_oak", "massy_oak", "white_oak"]
+}

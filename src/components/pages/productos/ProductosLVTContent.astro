@@ -4,9 +4,11 @@ import ProductosPisosCard from "./ProductosPisosCard.astro";
 import vectorLVTMobile from "../../../assets/svg/vectorLVTMobile.svg";
 import vectorLVTDesk from "../../../assets/svg/vectorLVTDesk.svg";
 
-const pisosLVTData = await getCollection("pisos", ({ data }) => {
+let pisosLVTData = await getCollection("pisos", ({ data }) => {
   return data.type === "lvt";
 });
+
+pisosLVTData = pisosLVTData.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <section class="container px-4 mb-12 md:px-0">

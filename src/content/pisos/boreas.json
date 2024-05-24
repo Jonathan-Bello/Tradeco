@@ -1,11 +1,12 @@
 {
   "id": "Boreas",
+  "order": 9,
   "title": "Boreas",
   "type": "lvt",
-  "image": "../../assets/imgs/pisos/boreas/boreas.jpg",
+  "image": "../../assets/imgs/pisos/boreas/boreas.png",
   "bannerImgs": [
     "../../assets/imgs/pisos/boreas/boreasPortada.jpg",
-    "../../assets/imgs/pisos/boreas/boreas.jpg"
+    "../../assets/imgs/pisos/boreas/boreas.png"
   ],
   "similarProductIDs": ["ares", "atica","cibeles","hera"]
 }

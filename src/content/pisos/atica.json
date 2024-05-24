@@ -1,11 +1,12 @@
 {
   "id": "Atica",
+  "order": 6,
   "title": "Atica",
   "type": "lvt",
-  "image": "../../assets/imgs/pisos/atica/atica.jpg",
+  "image": "../../assets/imgs/pisos/atica/atica.png",
   "bannerImgs": [
     "../../assets/imgs/pisos/atica/aticaPortada.jpg",
-    "../../assets/imgs/pisos/atica/atica.jpg"
+    "../../assets/imgs/pisos/atica/atica.png"
   ],
   "similarProductIDs": ["ares", "boreas", "cibeles", "hera"]
 }

@@ -1,11 +1,12 @@
 {
   "id": "Cibeles",
+  "order": 2,
   "title": "Cibeles",
   "type": "lvt",
-  "image": "../../assets/imgs/pisos/cibeles/cibeles.jpg",
+  "image": "../../assets/imgs/pisos/cibeles/cibeles.png",
   "bannerImgs": [
     "../../assets/imgs/pisos/cibeles/cibelesPortada.jpg",
-    "../../assets/imgs/pisos/cibeles/cibeles.jpg"
+    "../../assets/imgs/pisos/cibeles/cibeles.png"
   ],
   "similarProductIDs": ["ares", "atica", "boreas", "hera"]
 }

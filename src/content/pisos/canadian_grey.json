@@ -1,12 +1,12 @@
 {
-    "id": "Canadian_Grey",
-    "title": "Canadian Grey",
-    "type": "spc",
-    "image": "../../assets/imgs/pisos/canadian_grey/canadian_grey.jpg",
-    "bannerImgs": [
-      "../../assets/imgs/pisos/canadian_grey/canadian_greyPortada.jpg",
-      "../../assets/imgs/pisos/canadian_grey/canadian_grey.jpg"
-    ],
-    "similarProductIDs": ["carbon","coco_oak","massy_oak","white_oak"]
-  }
-  
+  "id": "Canadian_Grey",
+  "order": 2,
+  "title": "Canadian Grey",
+  "type": "spc",
+  "image": "../../assets/imgs/pisos/canadian_grey/canadian_grey.jpg",
+  "bannerImgs": [
+    "../../assets/imgs/pisos/canadian_grey/canadian_greyPortada.jpg",
+    "../../assets/imgs/pisos/canadian_grey/canadian_grey.jpg"
+  ],
+  "similarProductIDs": ["carbon", "coco_oak", "massy_oak", "white_oak"]
+}
