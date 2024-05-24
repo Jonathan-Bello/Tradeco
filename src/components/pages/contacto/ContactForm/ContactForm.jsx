@@ -52,7 +52,7 @@ const ContactForm = () => {
             id="whatsApp"
             type="tel"
             name="whatsApp"
-            placeholder="+52 0000000000"
+            placeholder="+506 0000000000"
             required
           />
         </label>
@@ -68,24 +68,11 @@ const ContactForm = () => {
             <option value="" disabled hidden>
               Selecciona una opción
             </option>
-            <option value="Ares">Ares</option>
-            <option value="Atica">Atica</option>
-            <option value="Boreas">Boreas</option>
-            <option value="Canadian Grey">Canadian Grey</option>
-            <option value="Carbon">Carbon</option>
-            <option value="Cibeles">Cibeles</option>
-            <option value="Coco Oak">Coco Oak</option>
-            <option value="Hera">Hera</option>
-            <option value="Hydra">Hydra</option>
-            <option value="Isis">Isis</option>
-            <option value="Kalia">Kalia</option>
-            <option value="Kiara">Kiara</option>
-            <option value="Massy Oak">Massy Oak</option>
-            <option value="Odra">Odra</option>
-            <option value="White Oak">White Oak</option>
-            <option value="Perdura Stone">Perdura Stone</option>
-            <option value="Imperial Stone">Imperial Stone</option>
-            <option value="Stona">Stona</option>
+            <option value="Piso vinílico Artis LVT">Piso vinílico Artis LVT</option>
+            <option value="Piso vinílico Artis SPC">Piso vinílico Artis SPC</option>
+            <option value="Enchape Perdura Stone">Enchape Perdura Stone</option>
+            <option value="Enchape Imperial Stone">Enchape Imperial Stone</option>
+            <option value="Enchape Stona">Enchape Stona</option>
           </select>
         </label>
         <ValidationError
