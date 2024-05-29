@@ -8,5 +8,8 @@
     "../../assets/imgs/pisos/isis/isisPortada.jpg",
     "../../assets/imgs/pisos/isis/isis.png"
   ],
-  "similarProductIDs": ["ares", "atica", "boreas", "cibeles"]
+  "similarProductIDs": ["ares", "atica", "boreas", "cibeles"],
+  "dimensions" : "7” x 48” (178 mm x 1220mm)",
+  "totalThickness": "2 mm",
+  "wearLayer": "0.1 mm (4 mils)"
 }

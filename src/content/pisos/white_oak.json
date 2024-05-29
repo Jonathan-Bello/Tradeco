@@ -8,5 +8,8 @@
     "../../assets/imgs/pisos/white_oak/white_oakPortada.jpg",
     "../../assets/imgs/pisos/white_oak/white_oak.png"
   ],
-  "similarProductIDs": ["carbon", "coco_oak", "massy_oak", "canadian_grey"]
+  "similarProductIDs": ["carbon", "coco_oak", "massy_oak", "canadian_grey"],
+  "dimensions" : "7.2” x 48” (183 mm x 1220mm)",
+  "totalThickness": "5.5 mm (Con espuma IXPE de 1.5 mm)",
+  "wearLayer": "0.5 mm (20 mils)"
 }

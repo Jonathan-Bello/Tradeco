@@ -8,5 +8,8 @@
     "../../assets/imgs/pisos/hera/heraPortada.jpg",
     "../../assets/imgs/pisos/hera/hera.png"
   ],
-  "similarProductIDs": ["ares", "atica", "boreas", "cibeles"]
+  "similarProductIDs": ["ares", "atica", "boreas", "cibeles"],
+  "dimensions" : "7” x 48” (178 mm x 1220mm)",
+  "totalThickness": "2 mm",
+  "wearLayer": "0.1 mm (4 mils)"
 }

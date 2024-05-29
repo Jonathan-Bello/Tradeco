@@ -8,5 +8,8 @@
     "../../assets/imgs/pisos/massy_oak/massy_oakPortada.jpg",
     "../../assets/imgs/pisos/massy_oak/massy_oak.png"
   ],
-  "similarProductIDs": ["canadian_grey", "carbon", "coco_oak", "white_oak"]
+  "similarProductIDs": ["canadian_grey", "carbon", "coco_oak", "white_oak"],
+  "dimensions" : "7.2” x 48” (183 mm x 1220mm)",
+  "totalThickness": "5.5 mm (Con espuma IXPE de 1.5 mm)",
+  "wearLayer": "0.5 mm (20 mils)"
 }

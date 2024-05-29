@@ -13,6 +13,9 @@ const pisosCollection = defineCollection({
       image: image(),
       type: z.string(),
       similarProductIDs: z.array(reference("pisos")),
+      dimensions: z.string(),
+      totalThickness: z.string(),
+      wearLayer: z.string(),
     }),
 });
 
