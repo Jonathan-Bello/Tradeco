@@ -10,13 +10,13 @@ const ProductosBanner = ({ arrayImgs }) => {
     <section
       className="ProductosBanner relative w-11/12 md:container
       rounded-lg overflow-hidden
-      h-40 sm:h-48 md:h-52 lg:h-[35rem]
-      bg-cover bg-bottom"
+      h-40 sm:h-48 md:h-52 lg:h-[40rem]
+      bg-bottom"
       style={{
         backgroundImage: `url(${arrayImgs[0].src})`,
       }}
     >
-      <div
+      {/* <div
         className="ProductosBanner__btnContainer
         flex flex-col items-center
       "
@@ -35,11 +35,11 @@ const ProductosBanner = ({ arrayImgs }) => {
         >
           Ampliar foto
         </button>
-      </div>
+      </div> */}
 
-      <ModalBase show={showModal} setShow={setShowModal}>
+      {/* <ModalBase show={showModal} setShow={setShowModal}>
         <ProductosBannerModal items={arrayImgs} />
-      </ModalBase>
+      </ModalBase> */}
     </section>
   );
 };
