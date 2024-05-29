@@ -12,44 +12,42 @@ import imgPiedra02 from "@/assets/imgs/productos/Piedra02.jpg";
 import imgPiedra03 from "@/assets/imgs/productos/Piedra03.jpg";
 ---
 
-<>
 <ProductosSelect client:load>
-    <BannerSmall bgImage={bgBannerPisos} slot="bannerPisos"/>
-    <BannerSmall bgImage={bgBannerPiedras} slot="bannerPiedras"/>
+  <BannerSmall bgImage={bgBannerPisos} slot="bannerPisos" />
+  <BannerSmall bgImage={bgBannerPiedras} slot="bannerPiedras" />
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4" slot="pisos">
-      <ProductTypeCard
-        imgBackground={imgPiso01}
-        title="Piso vinílico Artis LVT"
-        link="/productos/pisos-lvt"
-      />
-      <ProductTypeCard
-        imgBackground={imgPiso02}
-        title="Piso vinílico Artis SPC"
-        link="/productos/pisos-spc"
-      />
-    </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4" slot="pisos">
+    <ProductTypeCard
+      imgBackground={imgPiso01}
+      title="Piso vinílico Artis LVT"
+      link="/productos/pisos-lvt"
+    />
+    <ProductTypeCard
+      imgBackground={imgPiso02}
+      title="Piso vinílico Artis SPC"
+      link="/productos/pisos-spc"
+    />
+  </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-4" slot="piedras">
-      <ProductTypeCard
-        imgBackground={imgPiedra01}
-        title="Perdura Stone"
-        link="http://www.perdurastone.com"
-      />
-      <ProductTypeCard
-        imgBackground={imgPiedra02}
-        title="Imperial stone"
-        link="http://www.imperialstone.com.mx"
-      />
-      <ProductTypeCard
-        imgBackground={imgPiedra03}
-        title="Stona"
-        link="http://stona.com.mx"
-      />
-    </div>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-4" slot="piedras">
+    <ProductTypeCard
+      imgBackground={imgPiedra01}
+      title="Perdura Stone"
+      link="http://www.perdurastone.com"
+    />
+    <ProductTypeCard
+      imgBackground={imgPiedra02}
+      title="Imperial Stone"
+      link="http://www.imperialstone.com.mx"
+    />
+    <ProductTypeCard
+      imgBackground={imgPiedra03}
+      title="Stona"
+      link="http://stona.com.mx"
+    />
+  </div>
 
-    <slot />
-  </ProductosSelect>
-</>
+  <slot />
+</ProductosSelect>
 
 <style></style>
