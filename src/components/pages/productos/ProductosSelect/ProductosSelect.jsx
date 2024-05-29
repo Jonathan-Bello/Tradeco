@@ -1,7 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ProductosSelect = (props) => {
   const [typeSelected, setTypeSelected] = useState(1);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const type = queryParams.get("type");
+    if (type) {
+      setTypeSelected(parseInt(type, 10));
+    }
+  }, []);
 
   return (
     <section className="ProductosSelect container flex-1">
