@@ -5,9 +5,10 @@ type Props = {
   imgBackground: ImageMetadata;
   title: string;
   link: string;
+  isPdf: boolean;
 };
 
-const { imgBackground, title, link } = Astro.props;
+const { imgBackground, title, link, isPdf } = Astro.props;
 
 const optimizedBackground = await getImage({
   src: imgBackground,
@@ -15,7 +16,7 @@ const optimizedBackground = await getImage({
 });
 ---
 
-<a href={link} id={"cardType"} target={link.startsWith('http') && "_blank"}>
+<a href={link} id={"cardType"} target={isPdf && "_blank"}>
   <article
     class="ProductTypeCard md:container relative mt-0 mb-4 lg:mb-8
   rounded-3xl overflow-hidden
