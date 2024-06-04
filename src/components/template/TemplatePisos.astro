@@ -3,7 +3,6 @@ import { getEntries, type CollectionEntry } from "astro:content";
 import ProductosBreadcrumbs from "../pages/productos/ProductosBreadcrumbs.astro";
 import ProductosInfo from "@/components/pages/productos/ProductosInfo.astro";
 import ProductosBanner from "@/components/pages/productos/ProductosBanner";
-import { Image } from "astro:assets";
 import ProductosPisosCard from "../pages/productos/ProductosPisosCard.astro";
 import { fade } from "astro:transitions";
 
@@ -23,8 +22,8 @@ const similarPisos = await getEntries(piso.data.similarProductIDs);
 <div
   class="flex gap-4 lg:gap-6 items-end container relative px-6 top-[-2rem] md:top-[-4rem] lg:top-[-8rem]"
 >
-  <Image
-    src={piso.data.image}
+  <img
+    src={piso.data.image.src}
     class="border-white border-8 object-cover w-24 h-32 sm:w-32 sm:h-48 lg:w-56 lg:h-72"
     transition:name=`image-thumbnail-${piso.id}`
     alt=`image-thumbnail-${piso.id}`
