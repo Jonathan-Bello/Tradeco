@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import { fade } from "astro:transitions";
 
 type Props = {
   id: string;
@@ -14,8 +15,10 @@ const { id, img, title, type } = Astro.props;
 <article class="flex flex-col items-end">
   <Image
     src={img}
-    alt={title}
     class="mb-3 object-cover aspect-square rounded-xl"
+    transition:name=`image-thumbnail-${id}`
+    alt=`image-thumbnail-${id}`
+    transition:animate={fade({ duration: '0.7s' })}
   />
   <h3
     class="text-accent-500 text-left font-title text-2xl lg:text-3xl uppercase
