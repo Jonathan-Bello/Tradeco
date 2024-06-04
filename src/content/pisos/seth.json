@@ -5,7 +5,7 @@
   "type": "lvt",
   "image": "../../assets/imgs/pisos/seth/seth.png",
   "bannerImgs": [
-    "../../assets/imgs/pisos/seth/sethPortada.png",
+    "../../assets/imgs/pisos/seth/sethPortada.jpg",
     "../../assets/imgs/pisos/seth/seth.png"
   ],
   "similarProductIDs": ["ares", "atica", "boreas", "cibeles"],
