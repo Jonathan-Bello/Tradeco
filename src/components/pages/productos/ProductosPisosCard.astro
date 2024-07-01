@@ -18,10 +18,10 @@ const { id, img, title, type } = Astro.props;
     class="mb-3 object-cover aspect-square rounded-xl"
     transition:name=`image-thumbnail-${id}`
     alt=`image-thumbnail-${id}`
-    transition:animate={fade({ duration: '0.7s' })}
+    transition:animate={fade({ duration: "0.7s" })}
   />
   <h3
-    class="text-accent-500 text-left font-title text-2xl lg:text-3xl uppercase
+    class="text-accent-500 font-title text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl uppercase text-end
   tracking-[2.04px] lg:mb-1"
   >
     {title}
@@ -29,7 +29,7 @@ const { id, img, title, type } = Astro.props;
 
   <a
     href=`/productos/${type === "lvt" ? "pisos-lvt" : "pisos-spc"}/${id}`
-    class="text-accent-500 text-left underline
+    class="text-accent-500 text-end underline
     font-light text-sm lg:text-lg tracking-[2px]
     hover:text-accent-900 hover:font-normal"
     >Ver más detalles</a
