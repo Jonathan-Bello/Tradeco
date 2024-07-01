@@ -14,16 +14,16 @@ const optimizedBackground = await getImage({
 ---
 
 <section
-  class="w-11/12 md:container relative mt-0 mb-4 lg:mb-8
+  class="w-full md:container relative mt-0 mb-4 lg:mb-8
   rounded-b-3xl overflow-hidden
-  h-72 lg:h-96 xl:h-[30rem]
-  bg-[length:auto_100%] md:bg-cover bg-bottom"
+  h-80 lg:h-96 xl:h-[30rem]
+  bg-cover bg-no-repeat md:bg-cover bg-[bottom_center] md:bg-center"
   style={`background-image: url(${optimizedBackground.src});`}
 >
   <p
     class="banner__title
     absolute bg-tertiary-500 text-gray-50
-    font-bold font-title text-2xl lg:text-3xl
+    font-bold font-title text-lg md:text-2xl lg:text-3xl
     py-4 pl-4 lg:py-12 lg:pl-12
     rounded-tr-full lg:rounded-r-3xl
     bottom-0 left-0

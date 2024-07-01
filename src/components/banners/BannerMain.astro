@@ -20,20 +20,19 @@ for (let i = 0; i < backgroundImgs.length; i++) {
 }
 ---
 
-<!-- <banner-main> -->
 <banner-main
   id="bannerPrincipal"
   data-images={JSON.stringify(optimizedImages)}
-  class=`banner w-11/12 md:container relative
+  class={`banner w-11/12 md:container relative
   mx-4 md:mx-0 my-3 lg:my-8
   rounded-3xl overflow-hidden
-  h-96 md:h-[32rem] lg:h-[36rem]
-  bg-[length:auto_100%] md:bg-cover`
+  h-80 md:h-[32rem] lg:h-[36rem]
+  bg-cover`}
   style={`background-image: url(${optimizedImages[0].src});`}
 >
   <p
     class="banner__title
-    absolute bg-accent-500 text-gray-50 font-normal text-right
+    absolute bg-accent-500 bg-opacity-80 text-gray-50 font-normal text-right text-base lg:text-xl
     py-4 px-4 pl-12 pb-8
     rounded-bl-full
     top-0 right-0
@@ -44,19 +43,18 @@ for (let i = 0; i < backgroundImgs.length; i++) {
     >
   </p>
 </banner-main>
-<!-- </banner-main> -->
 
 <style>
   .banner {
-    background-position: center right;
+    background-position: bottom center;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
     transition: background 1s ease-in-out;
   }
 
   .banner__title {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    /* font-size: 1.25rem;
+    line-height: 1.75rem; */
   }
 </style>
 
@@ -73,7 +71,6 @@ for (let i = 0; i < backgroundImgs.length; i++) {
       const changeBackground = () => {
         currentIndex = (currentIndex + 1) % imgs.length;
         this.style.backgroundImage = `url(${imgs[currentIndex].src})`;
-        // console.log("cammbio de imagen", currentIndex);
       };
 
       changeBackground();
