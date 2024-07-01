@@ -12,7 +12,10 @@ import ElipsePiedra from "../../../assets/imgs/home/EllipsePiedra.png";
   </h2>
 
   <div class="flex justify-center gap-4 md:gap-12 lg:gap-36">
-    <div class="ProductCard relative flex flex-col">
+    <div class="ProductCard relative flex flex-col" data-link="/productos">
+      <a
+        href="/productos"
+        class="md:hidden absolute z-10 size-full bg-trasnparent"></a>
       <Image
         class="mb-2 w-40 sm:max-w-52 sm:w-full lg:mb-4"
         src={ElipsePisos}
@@ -29,7 +32,13 @@ import ElipsePiedra from "../../../assets/imgs/home/EllipsePiedra.png";
       >
     </div>
 
-    <div class="ProductCard relative flex flex-col">
+    <div
+      class="ProductCard relative flex flex-col"
+      data-link="/productos?type=2"
+    >
+      <a
+        href="/productos?type=2"
+        class="md:hidden absolute z-10 size-full bg-trasnparent"></a>
       <Image
         class="mb-2 w-40 sm:max-w-52 sm:w-full lg:mb-4"
         src={ElipsePiedra}
@@ -49,41 +58,43 @@ import ElipsePiedra from "../../../assets/imgs/home/EllipsePiedra.png";
 </section>
 
 <style lang="scss">
-  .ProductCard:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 10rem;
-    height: 10rem;
-    max-height: 208px;
-    border-radius: 999px;
-    background-color: rgba(0, 0, 0, 0.272);
-    transition: opacity 0.3s ease-in-out;
+  @media (min-width: 640px) {
+    .ProductCard:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 10rem;
+      height: 10rem;
+      max-height: 208px;
+      border-radius: 999px;
+      background-color: rgba(0, 0, 0, 0.272);
+      transition: opacity 0.3s ease-in-out;
 
-    @apply sm:w-full sm:max-w-52 sm:h-52;
-  }
+      @apply sm:w-full sm:max-w-52 sm:h-52;
+    }
 
-  .ProductCard:hover:before {
-    opacity: 1;
-  }
+    .ProductCard:hover:before {
+      opacity: 1;
+    }
 
-  .ProductCard__Link {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 80%;
-    transform: translate(-50%, -40%);
-    border: 2px solid #fff;
-    opacity: 0;
-    transition:
-      opacity 0.3s ease-in-out,
-      top 0.5s ease-in-out;
-  }
+    .ProductCard__Link {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 80%;
+      transform: translate(-50%, -40%);
+      border: 2px solid #fff;
+      opacity: 0;
+      transition:
+        opacity 0.3s ease-in-out,
+        top 0.5s ease-in-out;
+    }
 
-  .ProductCard:hover .ProductCard__Link {
-    top: 40%;
-    opacity: 1;
+    .ProductCard:hover .ProductCard__Link {
+      top: 40%;
+      opacity: 1;
+    }
   }
 </style>
