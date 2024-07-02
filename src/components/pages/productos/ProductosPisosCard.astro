@@ -15,7 +15,7 @@ const { id, img, title, type } = Astro.props;
 <article class="flex flex-col items-end">
   <Image
     src={img}
-    class="mb-3 object-cover aspect-square rounded-xl"
+    class="mb-3 object-cover aspect-square rounded-xl w-full"
     transition:name=`image-thumbnail-${id}`
     alt=`image-thumbnail-${id}`
     transition:animate={fade({ duration: "0.7s" })}
