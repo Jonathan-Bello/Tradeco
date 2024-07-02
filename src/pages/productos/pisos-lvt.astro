@@ -13,14 +13,4 @@ import bgBannerLvt from "@/assets/imgs/bannerProducts.jpg";
   </ProductosContent>
 </Layout>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const hash = window.location.hash;
-    if (hash) {
-      const target = document.querySelector(hash);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  });
-</script>
+

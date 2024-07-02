@@ -16,6 +16,7 @@ const Header = () => {
       >
         <div className="text-primary-500 basis-1/4 md:hidden">
           <MenuScale
+            className="cursor-pointer"
             height={36}
             width={36}
             onClick={() => {
@@ -34,7 +35,7 @@ const Header = () => {
         </a>
 
         <ul
-          className={`Header__content__links
+          className={`Header__content__links 
           ${showMobileMenu ? "Header__content__links--active" : "hidden"}
           list-none text-base lg:text-lg
           md:flex md:justify-end md:flex-1 md:space-x-20 md:pr-16`}
@@ -66,6 +67,7 @@ const Header = () => {
 
           <li className={"md:hidden"}>
             <Xmark
+              className="cursor-pointer"
               height={36}
               width={36}
               onClick={() => setShowMobileMenu(!showMobileMenu)}

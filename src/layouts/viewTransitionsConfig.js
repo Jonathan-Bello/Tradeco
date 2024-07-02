@@ -4,6 +4,8 @@ document.addEventListener("astro:before-swap", (ev) => {
   const exceptions = [
     "/productos/pisos-lvt",
     "/productos/pisos-spc",
+    "/productos/pisos-lvt#lvt-info",
+    "/productos/pisos-spc#spc-info",
   ];
 
   exceptions.includes(ev.to.pathname) && (scrollPosition = window.scrollY);
