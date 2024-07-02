@@ -28,7 +28,7 @@ const ContactForm = () => {
             id="name"
             type="text"
             name="name"
-            placeholder="Ingrese su nombre y apellido"
+            placeholder="Ingresa tu nombre y apellido"
             required
           />
         </label>
@@ -40,7 +40,7 @@ const ContactForm = () => {
             id="email"
             type="email"
             name="email"
-            placeholder="Ingrese su E-mail"
+            placeholder="Ingresa tu E-mail"
             required
           />
         </label>
