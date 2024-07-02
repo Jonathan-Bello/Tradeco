@@ -35,18 +35,20 @@ pisosSPCData = pisosSPCData.sort((a, b) => a.data.order - b.data.order);
     <li class="mb-1">Garantiza una excelente estabilidad dimensional</li>
   </ul>
 
-  <picture class="flex justify-end md:relative top-[-8rem] lg:top-[-14rem]">
+  <picture
+    class="flex justify-end md:relative top-[-8rem] md:top-0 lg:top-[-14rem]"
+  >
     <source media="(max-width: 1023px)" srcset={vectorSPCMobile.src} />
     <source media="(min-width: 1024px)" srcset={vectorSPCDesk.src} />
     <img
-      class="w-full lg:max-w-[60%]"
+      class="w-full md:w-[70%] lg:max-w-[55%] xl:max-w-[60%]"
       src={vectorSPCDesk.src}
       alt={"grafico"}
     />
   </picture>
 
   <h2
-    class="mt-16 md:mt-[-8rem] mb-6 lg:mb-8 font-title text-5xl lg:text-6xl text-primary-500 tracking-widest"
+    class="mt-16 lg:mt-[-8rem] mb-6 lg:mb-8 font-title text-5xl lg:text-6xl text-primary-500 tracking-widest"
   >
     Modelos
   </h2>
