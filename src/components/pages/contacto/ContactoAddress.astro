@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import iconPhoneGreen from "@/assets/svg/icon-phoneGreen.svg";
 import iconPhone from "@/assets/svg/icon-phone.svg";
 import iconWhatsapp from "@/assets/svg/icon-whatsapp.svg";
 ---
@@ -42,7 +43,7 @@ import iconWhatsapp from "@/assets/svg/icon-whatsapp.svg";
           <a href="tel:+506 2239 6647">(506) 2239 6647</a>
         </li>
         <li class="flex items-center gap-2 mb-2">
-          <Image class="size-6 md:size-8" src={iconPhone} alt="tel-icon" />
+          <Image class="size-6 md:size-8" src={iconPhoneGreen} alt="tel-icon" />
           <a href="tel:+506 2239 6648">(506) 2239 6648</a>
         </li>
         <li class="flex items-center gap-2 mb-2">
@@ -76,6 +77,6 @@ import iconWhatsapp from "@/assets/svg/icon-whatsapp.svg";
 
 <style>
   a {
-    @apply underline text-accent-400;
+    @apply underline text-accent-400 hover:text-accent-600;
   }
 </style>
