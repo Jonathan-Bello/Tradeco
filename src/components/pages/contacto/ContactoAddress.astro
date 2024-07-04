@@ -13,10 +13,23 @@ import iconWhatsapp from "@/assets/svg/icon-whatsapp.svg";
       <h3 class="font-title text-primary-500 tracking-wider text-lg md:mb-1">
         Dirección
       </h3>
-      <p class="mb-6">
-        San José, Lindora; del puente sobre el río Virilla 100 norte, 600 oeste
-        y 400 norte. Bodegas Los Malinches 4B.
-      </p>
+      <div class="mb-6">
+        <p class="mb-2">
+          San José, Lindora; del puente sobre el río Virilla 100 norte, 600
+          oeste y 400 norte. Bodegas Los Malinches 4B.
+        </p>
+
+        <div>
+          <a class="text-primary-500" href="https://waze.com/ul/hd1u0eygsc"
+            >Ver en Waze</a
+          > |
+          <a
+            class="text-primary-500"
+            href="https://maps.app.goo.gl/UcJyyBzSHBrUKXRAA"
+            >Ver en Google maps</a
+          >
+        </div>
+      </div>
 
       <h3
         class="font-title text-primary-500 tracking-wider text-lg mb-2 md:mb-2"
@@ -57,4 +70,8 @@ import iconWhatsapp from "@/assets/svg/icon-whatsapp.svg";
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
-<style></style>
+<style>
+  a:hover {
+    @apply underline;
+  }
+</style>

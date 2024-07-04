@@ -11,7 +11,7 @@ const ProductosBanner = ({ arrayImgs }) => {
       className="ProductosBanner relative w-11/12 md:container
       rounded-lg overflow-hidden
       h-40 sm:h-56 md:h-64 lg:h-[30rem] xl:h-[36rem]
-      bg-cover bg-center"
+      bg-cover bg-bottom lg:bg-center"
       style={{
         backgroundImage: `url(${arrayImgs[0].src})`,
       }}
