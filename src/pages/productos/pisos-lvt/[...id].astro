@@ -17,6 +17,6 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 ---
 
-<Layout title={entry.data.id}>
+<Layout title={"Tradeco Costa Rica - " + entry.data.id}>
   <TemplatePisos piso={entry} />
 </Layout>

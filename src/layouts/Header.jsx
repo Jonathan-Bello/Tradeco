@@ -35,7 +35,7 @@ const Header = () => {
         </a>
 
         <ul
-          className={`Header__content__links 
+          className={`Header__content__links
           ${showMobileMenu ? "Header__content__links--active" : "hidden"}
           list-none text-base lg:text-lg
           md:flex md:justify-end md:flex-1 md:space-x-20 md:pr-16`}
