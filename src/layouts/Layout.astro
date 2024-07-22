@@ -17,6 +17,8 @@ const { title } = Astro.props;
   <head>
     <!-- Metadatos del documento -->
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
 
@@ -27,7 +29,7 @@ const { title } = Astro.props;
     />
     <meta
       name="keywords"
-      content="Tradeco, Tradeco Costa Rica, Tradeco 506, Artis, Perdura Stone, Imperial Stone, Stona, pisos, pisos LVT, pisos SPC, piso vinílico Artis LVT, piso vinílico Artis SPC, pisos vinílicos, pisos laminados, piso PVC, pisos plásticos, pisos flotantes, pisos click, pisos adhesivos, Ática, Ares, Boreas, Isis, Hydra, Kiara, Kalia, Hera, Seth, Cibeles, Odra, Coco Oak, Massy Oak, White Oak, Carbon, Koly Oak, Canadian Grey, enchapes de piedra, fachaleta, piedra Perdura Stone, Fast Set, Castillo Europeo, Carolina, Vulcano, Castell, Risco, Fachaleta Old Brick, Fachaleta Árabe, Fachaleta corcho."
+      content="Tradeco, Tradeco Costa Rica, Tradeco 506, Artis, Perdura Stone, Imperial Stone, Stona, pisos, pisos LVT, pisos SPC, piso vinílico Artis LVT, piso vinílico Artis SPC, pisos vinílicos, pisos laminados, piso PVC, pisos plásticos, pisos flotantes, pisos click, pisos adhesivos, Ática, Ares, Boreas, Isis, Hydra, Kiara, Kalia, Hera, Seth, Cibeles, Odra, Coco Oak, Massy Oak, White Oak, Carbon, Koly Oak, Canadian Grey, enchapes de piedra, fachaleta, piedra Perdura Stone, Fast Set, Castillo Europeo, Carolina, Vulcano, Castell, Risco, Fachaleta Old Brick, Fachaleta Árabe, Fachaleta corcho"
     />
     <meta
       name="author"
@@ -55,8 +57,11 @@ const { title } = Astro.props;
     <!-- Canonical URL, para evitar problemas de contenido duplicado -->
     <link rel="canonical" href="https://tradeco506.com/" />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <ViewTransitions />
   </head>
   <body class="min-h-screen flex flex-col">

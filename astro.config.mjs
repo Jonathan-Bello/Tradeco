@@ -6,6 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://tradeco506.com/',
   integrations: [tailwind(), react(), sitemap()],
   output: 'static'
 });
